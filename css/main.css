@@ -137,7 +137,7 @@ body {
 }
 
 img {
-  position: absolute;
+  position: fixed;
   margin-top: 80px;
   margin-left: 80px;
   border-radius: 5%;
@@ -151,7 +151,7 @@ img {
 }
 
 #triangle-bottomright {
-  position: absolute;
+  position: fixed;
   width: 0;
   height: 0;
   border-bottom: 666px solid #f21e4e;
@@ -381,13 +381,17 @@ i {
 /*copyright*/
 
 .copyright {
-  position: absolute;
-  bottom: 10px;
+  position: fixed;
+  bottom: 3px;
   left : 600px;
   color: #676565cc;
   font-size: 14px;
-  padding-bottom: 40px;
 
+
+}
+.copyright a{
+  text-decoration: none !important;
+  color: #676565cc;
 }
 
 
