@@ -88,27 +88,27 @@ textarea {
    ========================================================================== */
 /*body */
 body {
-
   margin: 0;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+}
 
+.custom-background {
+  position: relative;
+}
 
+.shadow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .54);
 }
 
 .content-top {
-  position: fixed;
-  background: rgba(0, 0, 0, .54);
   color: #f1f1f1;
-  width: 100%;
-  height: 100%;
-
-
-
 }
 
 .contain-wrapper-top {
-  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
@@ -124,22 +124,22 @@ body {
 #myVideo {
   position: absolute;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   right: 0;
-  overflow: auto;
 }
 
 /*image */
 .image {
-  position: fixed;
-  margin-left: 20px;
-  margin-top: 30px;
+  position: relative;
+  left: 8.8vh;
+  top: 8.5vh;
 }
 
 img {
-  position: fixed;
-  margin-top: 80px;
-  margin-left: 80px;
+  position: absolute;
+  top: 6vh;
+  height: 70vh;
+  left: 2vh;
   border-radius: 5%;
 }
 
@@ -147,28 +147,20 @@ img {
   -webkit-box-shadow: 9px 7px 42px 3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 9px 7px 42px 3px rgba(0, 0, 0, 0.6);
   box-shadow: 10px 7px 24px -2px #333333e0;
-
 }
 
 #triangle-bottomright {
-  position: fixed;
-  width: 0;
-  height: 0;
-  border-bottom: 666px solid #f21e4e;
-  border-right: 464px solid transparent;
-  margin-top: 43px;
-  margin-left: 50px;
+  position: absolute;
+  border-bottom: 78vh solid #f21e4e;
+  border-right: 52vh solid transparent;
 }
 
 /*introduction*/
 
 .intro {
-  position: fixed;
-  top: 40px;
-  left: 400px;
-  margin-top: 171px;
-  margin-left: 139px;
-
+  position: absolute;
+  top: 22vh;
+  left: 69vh;
 }
 
 .intro #hi {
@@ -190,7 +182,6 @@ img {
   font-weight: 800;
   text-transform: capitalize;
   margin: 10px 0 0 0;
-
 }
 
 .intro .hypen {
@@ -201,7 +192,6 @@ img {
 .description {
   width: 70%;
   font-size: 1.2em;
-
 }
 
 /* ---------- Buttons ---------  */
@@ -235,7 +225,6 @@ img {
   z-index: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-
 }
 
 .btn-custom .arrow_right {
@@ -291,7 +280,6 @@ img {
   z-index: 0 !important;
   opacity: 0;
 }
-
 
 .header ul.icon-menu {
   margin: 0;
@@ -382,20 +370,16 @@ i {
 
 .copyright {
   position: fixed;
-  bottom: 3px;
-  left : 600px;
+  bottom: 0.34vh;
+  left: 70vh;
   color: #676565cc;
   font-size: 14px;
-
-
 }
-.copyright a{
+
+.copyright a {
   text-decoration: none !important;
   color: #676565cc;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -490,9 +474,9 @@ i {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 

@@ -36,78 +36,80 @@
 
 <body>
 
-  <!--background video-->
+<!--background video-->
+<div class="custom-background">
   <video autoplay muted loop id="myVideo">
     <source src="img/background-video.mp4" type="video/mp4">
   </video>
-  <!--    main container -->
-  <div class="content-top">
-    <div class="contain-wrapper-top">
-      <!--            picture goes here -->
-      <div class="image revealator-slideup revealator-once revealator-delay1">
-        <span id="triangle-bottomright"></span>
-        <img class="box-shadow" src="img/profile-pic1.jpg" height="600px">
-      </div>
-      <!--            introduction -->
-      <div class="intro revealator-slideup revealator-once revealator-delay1">
-        <span id="hi">HI THERE !</span>
-        <h2>I'm Farhana Fatima</h2>
-        <h3>I<span class="hypen">'</span>M A <span id="typed"></span></h3>
-        <p class="description">I'm a Tunisian based web designer & front‑end developer focused on crafting clean
-          & user‑friendly
-          experiences, I am passionate about building excellent software that improves the lives of those
-          around
-          me.</p>
-        <div class="button-custom">
-          <a href="#about" class="btn-custom">
-            <span> More About Me</span>
-          </a>
-          <a href="#about" class="btn-custom">
-            <span>Portfolio</span>
-          </a>
-        </div>
-
-
-      </div>
-      <!-- Header Starts -->
-      <header class="header" id="navbar-collapse-toggle">
-        <!-- Fixed Navigation Starts -->
-        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-          <li class="icon-box active">
-            <i class="fa fa-home"></i>
-            <a href="index.html">
-              <h2>Home</h2>
-            </a>
-          </li>
-          <li class="icon-box">
-            <i class="fa fa-user"></i>
-            <a href="about.html">
-              <h2>About</h2>
-            </a>
-          </li>
-          <li class="icon-box">
-            <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-              <h2>Portfolio</h2>
-            </a>
-          </li>
-          <li class="icon-box">
-            <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-              <h2>Contact</h2>
-            </a>
-          </li>
-
-        </ul>
-      </header>
+  <!--    background shadow -->
+  <div class="shadow"></div>
+</div>
+<!--    main container -->
+<div class="content-top">
+  <div class="contain-wrapper-top">
+    <!--            picture goes here -->
+    <div class="image revealator-slideup revealator-once revealator-delay1">
+      <span id="triangle-bottomright"></span>
+      <img class="box-shadow" src="img/profile-pic1.jpg">
     </div>
+    <!--            introduction -->
+    <div class="intro revealator-slideup revealator-once revealator-delay1">
+      <span id="hi">HI THERE !</span>
+      <h2>I'm Farhana Fatima</h2>
+      <h3>I<span class="hypen">'</span>M A <span id="typed"></span></h3>
+      <p class="description">I'm a Tunisian based web designer & front‑end developer focused on crafting clean
+        & user‑friendly
+        experiences, I am passionate about building excellent software that improves the lives of those
+        around
+        me.</p>
+      <div class="button-custom">
+        <a href="#about" class="btn-custom">
+          <span> More About Me</span>
+        </a>
+        <a href="#about" class="btn-custom">
+          <span>Portfolio</span>
+        </a>
+      </div>
 
-    <!-- copyright here-->
-    <div class="copyright">
-      <p><a href="https://github.com/fafatim">Copyright | Farhana Fatima © 2020</a></p>
+
     </div>
+    <!-- Header Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+      <!-- Fixed Navigation Starts -->
+      <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box active">
+          <i class="fa fa-home"></i>
+          <a href="index.html">
+            <h2>Home</h2>
+          </a>
+        </li>
+        <li class="icon-box">
+          <i class="fa fa-user"></i>
+          <a href="about.html">
+            <h2>About</h2>
+          </a>
+        </li>
+        <li class="icon-box">
+          <i class="fa fa-briefcase"></i>
+          <a href="portfolio.html">
+            <h2>Portfolio</h2>
+          </a>
+        </li>
+        <li class="icon-box">
+          <i class="fa fa-envelope-open"></i>
+          <a href="contact.html">
+            <h2>Contact</h2>
+          </a>
+        </li>
 
+      </ul>
+    </header>
+  </div>
 
+  <!-- copyright here-->
+  <div class="copyright">
+    <p><a href="https://github.com/fafatim">Copyright | Farhana Fatima © 2020</a></p>
+  </div>
 
 
 </div>
@@ -120,12 +122,19 @@
 
 <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
