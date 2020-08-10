@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-background {
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .54);
+}
+
+.content-top {
+  color: #f1f1f1;
+}
+
+.contain-wrapper-top {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/*typed js*/
+
+#typed {
+  color: #f21e4e;
+}
+
+/*background video*/
+#myVideo {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  right: 0;
+}
+
+/*image */
+.image {
+  position: relative;
+  left: 8.8vh;
+  top: 8.5vh;
+}
+
+img {
+  position: absolute;
+  top: 6vh;
+  height: 70vh;
+  left: 2vh;
+  border-radius: 5%;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 9px 7px 42px 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 9px 7px 42px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 7px 24px -2px #333333e0;
+}
+
+#triangle-bottomright {
+  position: absolute;
+  border-bottom: 78vh solid #f21e4e;
+  border-right: 52vh solid transparent;
+}
+
+/*introduction*/
+
+.intro {
+  position: absolute;
+  top: 22vh;
+  left: 69vh;
+}
+
+.intro #hi {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #dddddd;
+}
+
+.intro h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 3em;
+  text-shadow: -2px 3px 6px #ff0000;
+  margin: 0;
+}
+
+.intro h3 {
+  font-size: 3em;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 10px 0 0 0;
+}
+
+.intro .hypen {
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.description {
+  width: 70%;
+  font-size: 1.2em;
+}
+
+/* ---------- Buttons ---------  */
+.button-custom {
+  display: flex;
+  margin-top: 50px;
+}
+
+.button-custom a:link {
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.btn-custom {
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+  background-color: #0000007a;
+  line-height: 24px;
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-custom .arrow_right {
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.btn-custom::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #f21e4e;
+  z-index: -1;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover::after, .btn-custom:focus::after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.btn-custom:hover, .btn-custom:focus {
+  color: #ffffff;
+  outline: none;
+}
+.copyright {
+  position: fixed;
+  bottom: 0.34vh;
+  left: 70vh;
+  color: #676565cc;
+  font-size: 14px;
+}
+
+.copyright a {
+  text-decoration: none !important;
+  color: #676565cc;
+}

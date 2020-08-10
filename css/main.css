@@ -469,15 +469,87 @@ i {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width:320px) and (max-width: 664px){
+  .contain-wrapper-top {
+   justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 50px;
+  }
+  .image {
+    margin-top: 16vh;
+    position: static;
+    left: 0;
+    top: 0;
+  }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  img {
+   position: static;
+    top: 0;
+    height: 30vh;
+    left: 0;
+    border-radius: 100%;
+  }
+  .intro{
+    margin-top: 10vh;
+    position: static;
+    width: 90%;
+    color: #2b2a2a;
+    text-align: center;
+  }
+  .intro #hi {
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    color: #2b2a2a;
+  }
+
+  .intro h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-shadow: 0px 2px 6px  #2b2a2a;
+  }
+
+  .intro h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 10px 0 0 0;
+  }
+
+  .intro .hypen {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  .description {
+    width: 90%;
+    font-size: 1em;
+  }
+  .button-custom {
+  margin-left: 46px;
+    margin-top: 30px;
+  }
+  .btn-custom{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 30px;
+  }
+  .button-custom a:link {
+    margin-right: 20px;
+  }
+  .copyright {
+    position: static;
+    bottom: 0vh;
+    left: 0vh;
+    color: #2b2a2a;
+    font-size: 12px;
+  }
+  .copyright a {
+    color: #2b2a2a;
+  }
 }
 
 /* ==========================================================================
