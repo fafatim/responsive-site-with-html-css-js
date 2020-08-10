@@ -88,9 +88,12 @@ textarea {
    ========================================================================== */
 /*body */
 body {
+
   margin: 0;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+
+
 }
 
 .content-top {
@@ -99,6 +102,9 @@ body {
   color: #f1f1f1;
   width: 100%;
   height: 100%;
+
+
+
 }
 
 .contain-wrapper-top {
@@ -116,20 +122,22 @@ body {
 
 /*background video*/
 #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
+  right: 0;
+  overflow: auto;
 }
 
 /*image */
 .image {
+  position: fixed;
   margin-left: 20px;
   margin-top: 30px;
 }
 
 img {
+  position: absolute;
   margin-top: 80px;
   margin-left: 80px;
   border-radius: 5%;
@@ -139,11 +147,11 @@ img {
   -webkit-box-shadow: 9px 7px 42px 3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 9px 7px 42px 3px rgba(0, 0, 0, 0.6);
   box-shadow: 10px 7px 24px -2px #333333e0;
-  position: relative;
+
 }
 
 #triangle-bottomright {
-  position: fixed;
+  position: absolute;
   width: 0;
   height: 0;
   border-bottom: 666px solid #f21e4e;
@@ -155,6 +163,9 @@ img {
 /*introduction*/
 
 .intro {
+  position: fixed;
+  top: 40px;
+  left: 400px;
   margin-top: 171px;
   margin-left: 139px;
 
@@ -370,11 +381,13 @@ i {
 /*copyright*/
 
 .copyright {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left : 600px;
   color: #676565cc;
   font-size: 14px;
+  padding-bottom: 40px;
+
 }
 
 
