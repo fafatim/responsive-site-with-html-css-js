@@ -474,7 +474,7 @@ i {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 
   .mobile-view{
     display: block;
@@ -530,10 +530,10 @@ i {
     top: -9px;
   }
 
-  #menuToggler{
+  .menuToggler{
     margin: 0;
   }
-  #menuToggleBar{
+  .menuToggleBar{
     width: 100vw;
     position: absolute;
   }
@@ -673,6 +673,105 @@ i {
     line-height: 35px;
     margin-left: 11px;
     color: white;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+.tablet-view{
+  z-index: 5;
+  display: none;
+
+}
+  .header{
+    display: none;
+  }
+
+
+#myVideo{
+  min-width: 0;
+
+}
+  .image {
+    margin-top: 15vh;
+    left: 30vw;
+    top: 14vh;
+    position: absolute;
+    margin-top: 0;
+  }
+
+  .image .image2{
+    position: static;
+    top: 0px;
+    height: 30vh;
+    left: 0px;
+    border-radius: 100%;
+    border: 10px solid #f21e4e;
+  }
+  #triangle-bottomright {
+   display: none;
+  }
+  .image .box-shadow{
+    display: none;
+  }
+
+  .intro{
+    margin-top: 10vh;
+    position: absolute;
+    top: 40vh;
+    left: 4vw;
+    width: 90%;
+    text-align: center;
+  }
+  .intro #hi {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+
+  }
+
+  .intro h2 {
+    font-weight: 700;
+    font-size: 2.8em;
+
+  }
+
+  .intro h3 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+  }
+
+  .intro .hypen {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 1.2em;
+
+  }
+  .button-custom {
+   margin-left: 26vw;
+    margin-top: 30px;
+  }
+  .btn-custom{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 30px;
+  }
+  .button-custom a:link {
+    margin-right: 20px;
+  }
+  .copyright{
+
+    left: 33vw;
+
+  }
+  .copyright a{
+    color: #aaaaaa;
   }
 
 }

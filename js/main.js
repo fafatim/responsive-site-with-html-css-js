@@ -23,10 +23,10 @@ var typed2 = new Typed('#typed', {
 var cssProperties = { width: '100%' };
 var cssProperties1 = { width: '0%' };
 
-$( "#menuToggle" ).click(function() {
+$( ".menuToggle" ).click(function() {
   $(".navbar").show().animate(cssProperties);
 });
-$( "#cross-button" ).click(function() {
+$( ".cross-button" ).click(function() {
   $(".navbar").animate(cssProperties1,function(){
     $(this).hide();
   });
