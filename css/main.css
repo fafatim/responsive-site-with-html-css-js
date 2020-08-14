@@ -98,7 +98,14 @@ body{
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
-/*grid*/
+body .preloader .black_wall {
+  background-color: #eee;
+}
+
+body .preloader {
+  background-color: #fff;
+}
+grid
 .content-top {
   color: #f1f1f1;
 }
@@ -158,6 +165,7 @@ img {
   position: absolute;
   top: 22vh;
   left: 69vh;
+  color: white;
 }
 .intro #hi {
   font-size: 1.5em;
@@ -185,6 +193,103 @@ img {
   width: 70%;
   font-size: 1.2em;
 }
+
+/*about page styling*/
+
+
+/*** Page Title ***/
+
+.title-section {
+  margin: 0 auto;
+  width: 38%;
+  position: relative;
+  padding: 67px 0;
+}
+
+.title-section h1 {
+  font-size: 56px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 0 105px;
+
+}
+
+/*.title-bg {*/
+/*  font-size: 110px;*/
+/*  left: 0;*/
+/*  letter-spacing: 10px;*/
+/*  line-height: 0.7;*/
+/*  position: absolute;*/
+/*  right: 0;*/
+/*  top: 50%;*/
+/*  text-transform: uppercase;*/
+/*  font-weight: 800;*/
+/*  -webkit-transform: translateY(-50%);*/
+/*  -moz-transform: translateY(-50%);*/
+/*  -ms-transform: translateY(-50%);*/
+/*  -o-transform: translateY(-50%);*/
+/*  transform: translateY(-50%);*/
+/*  color: rgba(255, 255, 255, 0.07);*/
+/*}*/
+body .title-section h1 {
+  color: #666;
+}
+.title-section h1 span{
+  color: #f21e4e;
+}
+body .title-bg {
+  color: rgba(30, 37, 48, 0.07);
+}
+.title-divider {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-left: 259px;
+  margin-bottom: 20px;
+
+}
+
+
+.title-divider span:nth-child(1) {
+  position: absolute;
+  width: 2px;
+  height: 39px;
+  border-right: 4px dotted;
+  transform: rotate(45deg);
+  border-right-color: #f21e4e;
+}
+.title-divider span:nth-child(2) {
+  position: absolute;
+  width: 2px;
+  height: 39px;
+  border-right: 4px dotted;
+  transform: rotate(-45deg);
+  border-right-color: #f21e4e;
+}
+
+
+.title-divider:before {
+  content: "";
+  width: 79px;
+  height: 2px;
+  position: absolute;
+  left: -94px;
+  top: 18px;
+  opacity: 0.75;
+  background-color: #f21e4e;
+}
+.title-divider:after {
+  content: "";
+  width: 79px;
+  height: 2px;
+  position: absolute;
+  right: -100px;
+  top: 18px;
+  opacity: 0.75;
+  background-color: #f21e4e;
+}
+
 /* ---------- Buttons ---------  */
 .button-custom {
   display: flex;
@@ -258,10 +363,7 @@ img {
   transition: opacity 0.3s;
   -webkit-transition: opacity 0.3s;
 }
-.header.hide-header {
-  z-index: 0 !important;
-  opacity: 0;
-}
+
 .header ul.icon-menu {
   margin: 0;
   padding: 0;
