@@ -614,8 +614,9 @@ i {
   }
   /*copyright*/
   .copyright {
-    bottom: 1vh;
-    left: 20vw;
+    position: relative;
+    top: 95vh;
+    left: 24vw;
     color: #2b2a2a;
     font-size: 12px;
   }
