@@ -114,6 +114,7 @@ grid
   padding: 0;
   display: flex;
 }
+
 /*typed js*/
 #typed {
   color: #f21e4e;
@@ -143,7 +144,7 @@ grid
 .image2{
   display: none;
 }
-img {
+.image img {
   position: absolute;
   top: 6vh;
   height: 70vh;
@@ -193,103 +194,6 @@ img {
   width: 70%;
   font-size: 1.2em;
 }
-
-/*about page styling*/
-
-
-/*** Page Title ***/
-
-.title-section {
-  margin: 0 auto;
-  width: 38%;
-  position: relative;
-  padding: 67px 0;
-}
-
-.title-section h1 {
-  font-size: 56px;
-  font-weight: 900;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 0 0 0 105px;
-
-}
-
-/*.title-bg {*/
-/*  font-size: 110px;*/
-/*  left: 0;*/
-/*  letter-spacing: 10px;*/
-/*  line-height: 0.7;*/
-/*  position: absolute;*/
-/*  right: 0;*/
-/*  top: 50%;*/
-/*  text-transform: uppercase;*/
-/*  font-weight: 800;*/
-/*  -webkit-transform: translateY(-50%);*/
-/*  -moz-transform: translateY(-50%);*/
-/*  -ms-transform: translateY(-50%);*/
-/*  -o-transform: translateY(-50%);*/
-/*  transform: translateY(-50%);*/
-/*  color: rgba(255, 255, 255, 0.07);*/
-/*}*/
-body .title-section h1 {
-  color: #666;
-}
-.title-section h1 span{
-  color: #f21e4e;
-}
-body .title-bg {
-  color: rgba(30, 37, 48, 0.07);
-}
-.title-divider {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  margin-left: 259px;
-  margin-bottom: 20px;
-
-}
-
-
-.title-divider span:nth-child(1) {
-  position: absolute;
-  width: 2px;
-  height: 39px;
-  border-right: 4px dotted;
-  transform: rotate(45deg);
-  border-right-color: #f21e4e;
-}
-.title-divider span:nth-child(2) {
-  position: absolute;
-  width: 2px;
-  height: 39px;
-  border-right: 4px dotted;
-  transform: rotate(-45deg);
-  border-right-color: #f21e4e;
-}
-
-
-.title-divider:before {
-  content: "";
-  width: 79px;
-  height: 2px;
-  position: absolute;
-  left: -94px;
-  top: 18px;
-  opacity: 0.75;
-  background-color: #f21e4e;
-}
-.title-divider:after {
-  content: "";
-  width: 79px;
-  height: 2px;
-  position: absolute;
-  right: -100px;
-  top: 18px;
-  opacity: 0.75;
-  background-color: #f21e4e;
-}
-
 /* ---------- Buttons ---------  */
 .button-custom {
   display: flex;
@@ -449,6 +353,130 @@ i {
 .copyright a {
   text-decoration: none !important;
   color: #676565cc;
+}
+/*about page styling*/
+
+
+/*** Page Title ***/
+
+.title-section {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  padding: 36px 0;
+  text-align: center;
+}
+
+.title-section h1 {
+  font-size: 56px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+
+}
+
+body .title-section h1 {
+  color: #666;
+}
+.title-section h1 span{
+  color: #f21e4e;
+}
+body .title-bg {
+  color: rgba(30, 37, 48, 0.07);
+}
+.title-divider {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+
+.title-divider span:nth-child(1) {
+  position: absolute;
+  width: 2px;
+  height: 39px;
+  border-right: 4px dotted;
+  transform: rotate(45deg);
+  border-right-color: #f21e4e;
+}
+.title-divider span:nth-child(2) {
+  position: absolute;
+  width: 2px;
+  height: 39px;
+  border-right: 4px dotted;
+  transform: rotate(-45deg);
+  border-right-color: #f21e4e;
+}
+
+
+.title-divider:before {
+  content: "";
+  width: 79px;
+  height: 2px;
+  position: absolute;
+  left: -94px;
+  top: 18px;
+  opacity: 0.75;
+  background-color: #f21e4e;
+}
+.title-divider:after {
+  content: "";
+  width: 79px;
+  height: 2px;
+  position: absolute;
+  right: -100px;
+  top: 18px;
+  opacity: 0.75;
+  background-color: #f21e4e;
+}
+.about-image img{
+  height: 47vh;
+  position: relative;
+  top: 6vh;
+  left: 10vw;
+  transition: transform .2s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-image img:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-intro{
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  top: 2vh;
+  left: 18vw;
+}
+.resume-download{
+  position: relative;
+  left: 22vw;
+  top: 5vh;
+  color: #f21e4e;
+
+}
+.resume-download a{
+  text-decoration: none;
+}
+.personal-info ul{
+  font-size: 1.5em;
+
+}
+.personal-info ul li{
+  list-style-type: none;
+}
+.personal-info h6{
+  font-weight: 200;
+}
+.personal-info h6 span{
+  margin-right: 20px;
+  color: #f21e4e;
 }
 
 /* ==========================================================================
@@ -657,7 +685,7 @@ i {
     top: 0px;
    position: static;
   }
-  img {
+  .image img {
    position: static;
     top: 0px;
     height: 30vh;
