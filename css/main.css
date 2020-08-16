@@ -359,6 +359,88 @@ i {
 
 
 /*** Page Title ***/
+#mySidenav{
+  position: fixed;
+  top: 45vh;
+}
+.both .hover-action{
+  transition: 0.3s;
+  width: 100px;
+  text-decoration: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  height: 5px;
+
+}
+.both #about-span{
+  transition: 0.3s;
+  position: absolute;
+  left: -80px;
+  top : -20px;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+.both #service-span{
+  transition: 0.3s;
+  position: absolute;
+  top: 5px;
+  left: -80px;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+.both #resume-span{
+  transition: 0.3s;
+  position: absolute;
+  top: 30px;
+  left: -80px;
+  margin-left: 5px;
+  text-transform: uppercase;
+
+}
+div.both:hover #about-hamburger-menu{
+  left: 0;
+  background-color: #dddd;
+}
+
+div.both:hover #service-hamburger-menu{
+  left: 0;
+  background-color: #dddd;
+}
+
+div.both:hover #resume-hamburger-menu{
+  left: 0;
+  background-color: #dddd;
+}
+div.both:hover #about-span{
+  left: 0;
+}
+div.both:hover #service-span{
+  left: 0;
+}
+div.both:hover #resume-span{
+  left: 0;
+}
+
+.both #about-hamburger-menu{
+  background-color:black;
+  position: absolute;
+  left: -80px;
+
+}
+
+#service-hamburger-menu{
+  top: 25px;
+  background-color:black;
+  position: absolute;
+  left: -60px;
+}
+
+#resume-hamburger-menu{
+  top: 50px;
+  background-color:black;
+  position: absolute;
+  left: -40px;
+}
 
 .title-section {
   margin: 0 auto;
@@ -536,10 +618,10 @@ body .title-bg {
   margin-right: auto;
 
 }
-.service-title{
+.common-title{
   text-align: center;
 }
-.service-title h2{
+.common-title h2{
   font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
@@ -610,7 +692,10 @@ body .title-bg {
   margin-bottom: 3px;
   width: 44px
 }
-
+/*resume section*/
+#resume{
+  margin: 40px 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
