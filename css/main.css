@@ -105,7 +105,7 @@ body .preloader .black_wall {
 body .preloader {
   background-color: #fff;
 }
-grid
+/*grid*/
 .content-top {
   color: #f1f1f1;
   margin: 0 auto;
@@ -115,7 +115,11 @@ grid
   padding: 0;
   display: flex;
 }
-
+.personal-detail{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 /*typed js*/
 #typed {
   color: #f21e4e;
@@ -357,89 +361,69 @@ i {
 }
 /*about page styling*/
 
+section.active {}
 
 /*** Page Title ***/
+
+
 #mySidenav{
   position: fixed;
   top: 45vh;
+  z-index: 999;
 }
 .both .hover-action{
   transition: 0.3s;
   width: 100px;
   text-decoration: none;
-  color: white;
+  color: black;
   border-radius: 0 5px 5px 0;
   height: 5px;
-
-}
-.both #about-span{
-  transition: 0.3s;
-  position: absolute;
-  left: -80px;
-  top : -20px;
-  margin-left: 5px;
-  text-transform: uppercase;
-}
-.both #service-span{
-  transition: 0.3s;
-  position: absolute;
-  top: 5px;
-  left: -80px;
-  margin-left: 5px;
-  text-transform: uppercase;
-}
-.both #resume-span{
-  transition: 0.3s;
-  position: absolute;
-  top: 30px;
-  left: -80px;
-  margin-left: 5px;
-  text-transform: uppercase;
-
-}
-div.both:hover #about-hamburger-menu{
-  left: 0;
-  background-color: #dddd;
-}
-
-div.both:hover #service-hamburger-menu{
-  left: 0;
-  background-color: #dddd;
-}
-
-div.both:hover #resume-hamburger-menu{
-  left: 0;
-  background-color: #dddd;
-}
-div.both:hover #about-span{
-  left: 0;
-}
-div.both:hover #service-span{
-  left: 0;
-}
-div.both:hover #resume-span{
-  left: 0;
-}
-
-.both #about-hamburger-menu{
   background-color:black;
   position: absolute;
-  left: -80px;
 
+}
+.both #about-span, .both #service-span, .both #resume-span{
+  transition: 0.3s;
+  position: absolute;
+  margin-left: 5px;
+  text-transform: uppercase;
+
+}
+#mySidenav a.active {
+  left: 0;
+  background-color: #dddd;
+}
+.both #about-span{
+  top : -18px;
+
+}
+.both #service-span{
+  top: -20px;
+
+}
+.both #resume-span{
+  top: -17px;
+}
+
+#mySidenav a:hover{
+  left: 0;
+  background-color: #dddd;
+}
+
+#about-hamburger-menu{
+  left: -80px;
 }
 
 #service-hamburger-menu{
   top: 25px;
-  background-color:black;
-  position: absolute;
-  left: -60px;
+  left: -80px;
+  width: 120px;
 }
 
 #resume-hamburger-menu{
   top: 50px;
-  background-color:black;
-  position: absolute;
-  left: -40px;
+  left: -80px;
+  width: 140px;
 }
 
 .title-section {
@@ -552,6 +536,7 @@ body .title-bg {
 }
 .personal-info h6{
   font-weight: 200;
+  color: #aaaaaa;
 }
 .personal-info h6 span{
   margin-right: 20px;
@@ -610,6 +595,7 @@ body .title-bg {
   margin: 0 10px;
 }
 /*service section*/
+
 #service{
   margin: 70px 0;
 }
@@ -672,6 +658,12 @@ body .title-bg {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 99px;
   transition: transform .2s;
+}
+.square-shape h5{
+  color: #2b2a2a;
+}
+.square-container p{
+  color: #555555;
 }
 .icon-box-fonts i{
   padding-top: 13px;

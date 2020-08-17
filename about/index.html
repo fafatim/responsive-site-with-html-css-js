@@ -34,7 +34,8 @@
 <div class="main">
   <!--    main container -->
   <div class="content-top">
-    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1 ">
+    <section id="about">
+    <div class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1 ">
       <h1>ABOUT <span>ME</span></h1>
       <!--            <span class="title-bg">Resume</span>-->
       <div class="divider">
@@ -43,26 +44,25 @@
           <span></span>
         </div>
       </div>
+    </div>
 
-    </section>
-    <div class="contain-wrapper-top">
-      <div id="mySidenav" class="sidenav">
-        <div class="both">
-          <span id="about-span">about</span>
-          <a href="#about" class="hover-action" id="about-hamburger-menu"></a>
+    <div id="mySidenav" class="sidenav">
+      <div class="both">
+        <a href="#about" class="hover-action" id="about-hamburger-menu"><span id="about-span">about</span></a>
       </div>
-        <div class="both">
-          <span id="service-span">services</span>
-        <a href="#service" class="hover-action" id="service-hamburger-menu"></a>
-        </div>
-        <div class="both">
-          <span id="resume-span">resume</span>
-        <a href="#resume" class="hover-action" id="resume-hamburger-menu"></a>
-        </div>
+      <div class="both">
+        <a href="#service" class="hover-action" id="service-hamburger-menu"><span id="service-span">services</span></a>
       </div>
+      <div class="both">
+        <a href="#resume" class="hover-action" id="resume-hamburger-menu"><span id="resume-span">resume</span></a>
+      </div>
+    </div>
+
+    <div class="personal-detail">
       <div class="about-image">
         <img src="../img/about-image.jpeg" alt="personal pic">
       </div>
+
       <div class="full-container">
         <div class="about-intro">
           <div class="personal-info">
@@ -115,9 +115,7 @@
 
         </div>
       </div>
-
-      <!-- Header Starts -->
-      <header class="header">
+        <header class="header">
         <!-- Fixed Navigation Starts -->
         <ul class="icon-menu revealator-slideup revealator-once revealator-delay1">
           <li class="icon-box ">
@@ -149,29 +147,34 @@
           </li>
         </ul>
       </header>
-
-      <div class="tablet-view">
-        <div class="menu-toggle menuToggle">
-          <span></span>
-        </div>
-        <div class="cross cross-button">
-          <span><i class="fa fa-times"></i></span>
-        </div>
-
-        <!--      tablet version navbar-->
-        <div class="navbar navBarMenu">
-          <div class="menuToggleBar">
-            <ul class="menuToggler">
-              <li><a href="../index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-              <li class="active"><a href="index.html"><i class="fa fa-user"></i><span>About</span></a></li>
-              <li><a href="../portfolio/index.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-              <li><a href="../contact/index.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-              <li><a href="../blog/index.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
+    </section>
+<!--tablet version-->
+
+<!--      <div class="tablet-view">-->
+<!--        <div class="menu-toggle menuToggle">-->
+<!--          <span></span>-->
+<!--        </div>-->
+<!--        <div class="cross cross-button">-->
+<!--          <span><i class="fa fa-times"></i></span>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash;      tablet version navbar&ndash;&gt;-->
+<!--        <div class="navbar navBarMenu">-->
+<!--          <div class="menuToggleBar">-->
+<!--            <ul class="menuToggler">-->
+<!--              <li><a href="../index.html"><i class="fa fa-home"></i><span>Home</span></a></li>-->
+<!--              <li class="active"><a href="index.html"><i class="fa fa-user"></i><span>About</span></a></li>-->
+<!--              <li><a href="../portfolio/index.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>-->
+<!--              <li><a href="../contact/index.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>-->
+<!--              <li><a href="../blog/index.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
+
 
 
       <section id="service">
