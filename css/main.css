@@ -678,7 +678,7 @@ body .title-bg {
   background: #bcbcbc none repeat scroll 0 0;
   height: 2px;
   margin: 0 auto;
-  width: 77px
+  width: 77px;
 }
 .horizontal-line div.top {
   margin-bottom: 3px;
@@ -686,8 +686,250 @@ body .title-bg {
 }
 /*resume section*/
 #resume{
-  margin: 40px 0;
+  margin: 70px 0;
 }
+.resume-row{
+  color: black;
+  width: 50%;
+}
+.resume-container{
+  display: flex;
+  justify-content: center;
+  flex-flow: row ;
+  /*margin-left: 200px;*/
+  /*margin-right: 200px;*/
+  margin-top: 40px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume-row:nth-child(1){
+  margin-right: 100px;
+}
+.resume-title {
+  line-height: 1;
+  position: relative;
+  padding-left: 50px;
+}
+.resume-title:before {
+  top: -8px;
+  left: -7px;
+  width: 45px;
+  height: 45px;
+  display: block;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f21e4e;
+}
+.resume-icon{
+  position: relative;
+  bottom: 36px;
+  right: 3px;
+  font-size: 45px;
+}
+.resume-item{
+  position: relative;
+}
+.resume-item:after {
+  top: 43px;
+  left: -40px;
+  width: 41px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: #151812;
+}
+.resume-item:before{
+  position: absolute;
+  background-color: #151812;
+  height: 100px;
+  width: 1px;
+  top: 43px;
+  left: -41px;
+  content: "";
+
+}
+ .resume-body{
+ position: relative;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.el-icon:before {
+  top: 38px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #f21e4e;
+}
+.resume-row ul li{
+  list-style-type: none;
+}
+
+/*resume section*/
+#resume{
+  margin: 70px 0;
+}
+.resume-row{
+  color: black;
+  width: 50%;
+}
+.resume-container{
+  display: flex;
+  justify-content: center;
+  flex-flow: row ;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 40px;
+}
+
+.resume-row:nth-child(1){
+  margin-right: 100px;
+}
+.resume-title {
+  line-height: 1;
+  position: relative;
+  padding-left: 50px;
+}
+.resume-title:before {
+  top: -8px;
+  left: -7px;
+  width: 45px;
+  height: 45px;
+  display: block;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f21e4e;
+}
+.resume-icon{
+  position: relative;
+  bottom: 36px;
+  right: 3px;
+  font-size: 45px;
+}
+.resume-item{
+  position: relative;
+}
+.resume-item:after {
+  top: 43px;
+  left: -40px;
+  width: 41px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: #151812;
+}
+.resume-item:before{
+  position: absolute;
+  background-color: #151812;
+  height: 100px;
+  width: 1px;
+  top: 43px;
+  left: -41px;
+  content: "";
+
+}
+.resume-body{
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.el-icon:before {
+  top: 38px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #f21e4e;
+}
+.resume-row ul li{
+  list-style-type: none;
+}
+/*skills section*/
+.text-icon{
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.star-rateing i{
+  font-size: 9px;
+  position: relative;
+
+}
+
+.text-icon p{
+  font-size: .8em;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: absolute;
+  top: -23px;
+  left: 43px;
+}
+.skill-body{
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+.skill-row {
+  color: black;
+  width: 100%;
+}
+
+.skill-row:nth-child(1){
+  /* margin-right: 100px; */
+}
+
+.skill-title {
+  line-height: 1;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+.skill-title:before {
+  top: -8px;
+  left: -7px;
+  width: 45px;
+  height: 45px;
+  display: block;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f21e4e;
+}
+.skill-items{
+  display: flex;
+}
+.skill-items .second-items{
+  width: 50%;
+  margin-left: -21px;
+}
+.skill-items .first-items{
+  width: 50%;
+
+}
+.skill-row:nth-child(2) {
+  margin-left: 40px;
+}
+.skill-container{
+  display: flex;
+  justify-content: center;
+  flex-flow: row ;
+  margin-top: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
