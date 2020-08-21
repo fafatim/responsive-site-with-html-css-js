@@ -489,6 +489,7 @@ section.active {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 0;
+  margin-top: 0;
 
 
 }
@@ -756,7 +757,7 @@ body .title-bg {
   transform: rotateY(130deg);
 }
 
-.horizontal-line div {
+.horizontal-line div{
   background: #bcbcbc none repeat scroll 0 0;
   height: 2px;
   margin: 0 auto;
@@ -1443,7 +1444,6 @@ body .title-bg {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
-
   }
   .mobile-page-navigation{
     padding-top: 100px;
@@ -1474,6 +1474,38 @@ body .title-bg {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px #2b2a2abd;
   }
+  .horizontal-line div{
+    background: #bcbcbc none repeat scroll 0 0;
+    height: 2px;
+    margin: 0 auto;
+    width: 77px;
+  }
+  .common-underline{
+    position: relative;
+    width: 139px;
+    height: 2px;
+    background-color: #cccccc;
+    display: none;
+    transition: 0.3s;
+  }
+  #service-header {
+    position: relative;
+    width: 82px;
+    left: 29px;
+    height: 2px;
+    background-color: #cccccc;
+  }
+  #resume-header {
+    position: relative;
+    width: 76px;
+    left: 33px;
+    height: 2px;
+    background-color: #cccccc;
+  }
+  .mobile-version-header a:hover .common-underline{
+   display: block;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
