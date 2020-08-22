@@ -34,14 +34,82 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<div class="mobile-view">
-  <div class="menu-toggle menuToggle">
-    <span></span>
-  </div>
-  <div class="content-top">
-    <div class="contain-wrapper-top">
 
+<!--mobile version-->
+<div class="mobile-view">
+
+  <div class="about-me-header revealator-slideup revealator-once revealator-delay1">
+    <div class="title-section"><h1>ABOUT <span>ME</span></h1></div>
+    <div class="menu-toggle menuToggle">
+      <span></span>
     </div>
+  </div>
+
+  <div class="mobile-page-navigation">
+    <div class ="mobile-page-navigationBar">
+      <div class="mobile-version-header">
+        <a href="index.html">personal info
+          <div class="common-underline active" id="personal-info-header"></div>
+        </a>
+      </div>
+
+      <div class="mobile-version-header">
+        <a href="service.html">services
+          <div class="common-underline active"  id="service-header"></div>
+        </a>
+      </div>
+      <div class="mobile-version-header">
+        <a href="resume.html">resume
+          <div class="common-underline"  id="resume-header"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content-top">
+    <section id="service">
+      <div class="full-container">
+        <div class="common-title"><h2>My Services</h2></div>
+        <div class="common-container">
+          <div class="square-container revealator-slideup revealator-once revealator-delay1">
+            <div class="square-shape">
+              <div class="single-service">
+                <div class="icon-box-fonts"><i class="fa fa-desktop"></i></div>
+                <h5 class="montserrat weight-medium no-margin">UI/UX DESIGN</h5>
+                <span></span>
+                <p> There are many variatio <br> ns of pssages of Lorm available, bu in some form</p>
+              </div>
+            </div>
+            <div class="square-shape">
+              <div class="single-service">
+                <div class="icon-box-fonts"><i class="fa fa-heart-o"></i></div>
+                <h5 class="montserrat weight-medium no-margin">WEB DESIGN</h5>
+                <span></span>
+                <p> There are many variatio <br> ns of pssages of Lorm available, bu in some form</p>
+              </div>
+            </div>
+            <div class="square-shape">
+              <div class="single-service">
+                <div class="icon-box-fonts"><i class="fa fa-crosshairs"></i></div>
+                <h5 class="montserrat weight-medium no-margin">MINIMAL DESIGN</h5>
+                <span></span>
+                <p> There are many variatio <br> ns of pssages of Lorm available, bu in some form</p>
+              </div>
+            </div>
+            <div class="square-shape">
+              <div class="single-service">
+                <div class="icon-box-fonts"><i class="fa fa-wordpress"></i></div>
+                <h5 class="montserrat weight-medium no-margin">DEVELOPMENT</h5>
+                <span></span>
+                <p> There are many variatio <br> ns of pssages of Lorm available, bu in some form</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="navbar navBarMenu">
       <div class="cross cross-button">
         <span><i class="fa fa-times"></i></span>
@@ -54,9 +122,44 @@
           <li><a href="../contact/index.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
           <li><a href="../blog/index.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
         </ul>
-
+        <div class="copyright">
+          <p><a href="https://github.com/fafatim">Copyright | Farhana Fatima © 2020</a></p>
+        </div>
       </div>
     </div>
   </div>
 
 </div>
+
+
+
+
+
+
+
+
+<!--  &lt;!&ndash; copyright here&ndash;&gt;-->
+<!--  <p class="copyright">Copyright | Farhana Fatima © 2020</p>-->
+<!--&lt;!&ndash;script library&ndash;&gt;-->
+<script src="../js/fm.revealator.jquery.min.js"></script>
+<script src="../js/preloader.min.js"></script>
+
+<script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+
+<script src="../js/script.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
