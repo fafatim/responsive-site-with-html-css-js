@@ -802,7 +802,7 @@ body .title-section h1 {
   color: black;
   position: relative;
   bottom: 6px;
-  right: -6px;
+  right: -3px;
   font-size: 45px;
   color: #111111;
 
@@ -917,14 +917,14 @@ body .title-section h1 {
 }
 
 #resume > div > div > div.skill-container > div:nth-child(1) > h4 {
-  right: 30px;
+  right: 5px;
 }
 
 #resume > div > div > div.skill-container > div:nth-child(2) > h4 {
-  left: 55px;
+  left: -5px;
 }
 #resume > div > div > div.skill-container > div:nth-child(2) > span {
-  left: 56px;
+  left: 3px;
 }
 .skill-container #first-skill-items{
   margin-top: 0;
