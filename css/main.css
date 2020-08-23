@@ -86,11 +86,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/**************************desktop version home page style properties**********************************/
 /*body */
 .mobile-view {
   display: none;
 }
-
 .tablet-view {
   display: none;
 }
@@ -109,34 +109,31 @@ body .preloader {
   background-color: #fff;
 }
 
-/*grid*/
+/***************************************desktop version home page grid*************************************/
 .content-top {
   color: #f1f1f1;
   margin: 0 auto;
 }
-
 .contain-wrapper-top {
   margin: 0;
   padding: 0;
   display: flex;
 }
-
 .personal-detail {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-/*typed js*/
+/***********************************desktop version home page typed js********************************/
 #typed {
   color: #f21e4e;
 }
 
-/*background video*/
+/***************************************desktop version home page background video*******************/
 .custom-background {
   position: relative;
 }
-
 .shadow {
   position: absolute;
   width: 100vw;
@@ -151,7 +148,7 @@ body .preloader {
   right: 0;
 }
 
-/*image */
+/**************************desktop version home page  image*****************************/
 .image {
   position: relative;
   left: 8.8vh;
@@ -169,7 +166,7 @@ body .preloader {
   left: 2vh;
   border-radius: 5%;
 }
-
+/**********************************desktop version home page image hover plus background shadow section***************************/
 .box-shadow {
   -webkit-box-shadow: 9px 7px 42px 3px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 9px 7px 42px 3px rgba(0, 0, 0, 0.6);
@@ -182,20 +179,18 @@ body .preloader {
   border-right: 52vh solid transparent;
 }
 
-/*introduction*/
+/*************************************desktop version home page introduction***********************************/
 .intro {
   position: absolute;
   top: 22vh;
   left: 69vh;
   color: white;
 }
-
 .intro #hi {
   font-size: 1.5em;
   font-weight: 400;
   color: #dddddd;
 }
-
 .intro h2 {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
@@ -203,25 +198,22 @@ body .preloader {
   text-shadow: -2px 3px 6px #ff0000;
   margin: 0;
 }
-
 .intro h3 {
   font-size: 3em;
   font-weight: 800;
   text-transform: capitalize;
   margin: 10px 0 0 0;
 }
-
 .intro .hypen {
   font-weight: 100;
   font-size: 1em;
 }
-
 .description {
   width: 70%;
   font-size: 1.2em;
 }
 
-/* ---------- Buttons ---------  */
+/*********************** desktop version home page Buttons********************************/
 .button-custom {
   display: flex;
   margin-top: 50px;
@@ -287,7 +279,7 @@ body .preloader {
   outline: none;
 }
 
-/*** Navigation ***/
+/*********** desktop version homepage Navigation*****************************/
 .header {
   position: fixed;
   bottom: 0;
@@ -387,7 +379,7 @@ i {
   background-color: #f21e4e;
 }
 
-/*copyright*/
+/*************************desktop version homepage copyright***********************/
 .copyright {
   position: fixed;
   bottom: 0.34vh;
@@ -401,13 +393,11 @@ i {
   color: #676565cc;
 }
 
-/*about page styling*/
+/**************************desktop version about page styling properties *****************************/
 
 section.active {
 }
-
-/*** Page Title ***/
-
+/************************desktop version about page hamburger side menu*************************/
 
 #mySidenav {
   position: fixed;
@@ -474,7 +464,7 @@ section.active {
   left: -80px;
   width: 140px;
 }
-
+/*************************desktop version about page title************************/
 .title-section {
   margin: 0 auto;
   width: 100%;
@@ -491,7 +481,6 @@ section.active {
   margin-bottom: 0;
   margin-top: 0;
 
-
 }
 
 body .title-section h1 {
@@ -501,10 +490,7 @@ body .title-section h1 {
 .title-section h1 span {
   color: #f21e4e;
 }
-
-body .title-bg {
-  color: rgba(30, 37, 48, 0.07);
-}
+/*******************desktop version about page title divider *******************/
 
 .title-divider {
   position: relative;
@@ -555,7 +541,7 @@ body .title-bg {
   opacity: 0.75;
   background-color: #f21e4e;
 }
-
+/***************************desktop version about page personal info section image******************/
 .about-image img {
   height: 47vh;
   position: relative;
@@ -571,30 +557,25 @@ body .title-bg {
   transform: scale(1.02);
   box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+/**************desktop version about page personal info introduction ******************/
 .about-intro {
   display: flex;
   flex-flow: row wrap;
-  margin: 40px 0px 10px 0;
+  margin: 0px 0px 10px 0;
 }
-
-.resume-download {
-  margin-left: 39px;
-  color: #f21e4e;
-
-}
-
-.resume-download a {
-  text-decoration: none;
-}
-
-.personal-info-detail ul {
-  font-size: 1.5em;
+/*********************desktop version about page personal info section ****************************/
+.personal-info-detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
-
 .personal-info-detail ul li {
   list-style-type: none;
+  font-size: 1.5em;
+  margin: 5.8vh 0 5.8vh 0;
+  font-weight: 500! important;
+  text-transform: uppercase;
 }
 
 .personal-info-detail h6 {
@@ -605,6 +586,16 @@ body .title-bg {
 .personal-info-detail h6 span {
   margin-right: 20px;
   color: #f21e4e;
+}
+/******************desktop version about page download resume button****************/
+.resume-download {
+  margin-left: 39px;
+  color: #f21e4e;
+
+}
+
+.resume-download a {
+  text-decoration: none;
 }
 
 .custom-btn {
@@ -664,18 +655,29 @@ body .title-bg {
   color: white;
   margin: 0 10px;
 }
+/**************desktop version about page personal info,services,resume title underline*****************/
+.horizontal-line div{
+  background: #bcbcbc none repeat scroll 0 0;
+  height: 2px;
+  margin: 0 auto;
+  width: 77px;
+}
 
-/*service section*/
+.horizontal-line div.top {
+  margin-bottom: 3px;
+  width: 44px
+}
+
+/*******************desktop version about page service section**********************/
 
 #service {
   margin: 70px 0;
 }
-
 .full-container {
   margin-left: auto;
   margin-right: auto;
 }
-
+/**************************desktop version about page personal info, service, resume section title**************/
 .common-title {
   text-align: center;
   width: 100%;
@@ -687,14 +689,7 @@ body .title-bg {
   text-transform: uppercase;
   color: #555555;
 }
-
-/*.horizontal-line .top{*/
-/*  width: 20px;*/
-/*  height: 2px;*/
-/*  background-color: #888888;*/
-
-/*}*/
-
+/*******************desktop version service section square shape *********************/
 .square-container {
   display: flex;
   margin-top: 55px;
@@ -752,30 +747,20 @@ body .title-bg {
   color: #f21e4e;
 
 }
-
 .icon-box-fonts:hover {
   transform: rotateY(130deg);
 }
 
-.horizontal-line div{
-  background: #bcbcbc none repeat scroll 0 0;
-  height: 2px;
-  margin: 0 auto;
-  width: 77px;
-}
-
-.horizontal-line div.top {
-  margin-bottom: 3px;
-  width: 44px
-}
-
-/*resume section*/
+/********************desktop version about page resume section education,experience and skills properties*********************/
 #resume {
   margin: 70px 0;
 }
-
-
-
+.common-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/************************desktop version about page resume section education and experience part********/
 .resume-container {
   display: flex;
   justify-content: center;
@@ -786,16 +771,7 @@ body .title-bg {
   margin-right: auto;
 
 }
-
-
-.common-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-
-
+/*******************desktop version about page resume section education and experience title***********/
 .resume-title {
   line-height: 1;
   position: relative;
@@ -813,17 +789,39 @@ body .title-bg {
   border-radius: 50%;
   background-color: #f21e4e;
 }
-
-.resume-icon i {
+/*************************desktop version about page resume section education and experience title icon ****************/
+.resume-icon {
   position: relative;
-  bottom: 36px;
-  right: 3px;
+  bottom: 31px;
+  right: -5px;
   font-size: 45px;
   color: #111111;
 }
 
+.skill-icon i{
+  color: black;
+  position: relative;
+  bottom: 6px;
+  right: 25px;
+  font-size: 45px;
+  color: #111111;
+
+}
+
+/**************desktop version about page resume section education and experience detail**********/
 .resume-item {
   position: relative;
+}
+.resume-row ul li {
+  list-style-type: none;
+}
+
+.resume-row {
+  color: black;
+  width: 50%;
+}
+.resume-row:nth-child(1) {
+  margin-right: 100px;
 }
 
 .resume-item:after {
@@ -846,14 +844,6 @@ body .title-bg {
   content: "";
 
 }
-
-.resume-body {
-  position: relative;
-  padding-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 30px;
-}
-
 .el-icon:before {
   top: 38px;
   left: 0;
@@ -865,55 +855,6 @@ body .title-bg {
   background: #f21e4e;
 }
 
-.resume-row ul li {
-  list-style-type: none;
-}
-
-/*resume section*/
-#resume {
-  margin: 70px 0;
-}
-
-.resume-row {
-  color: black;
-  width: 50%;
-}
-.resume-row:nth-child(1) {
-  margin-right: 100px;
-}
-
-.resume-icon {
-  position: relative;
-  bottom: 36px;
-  right: 3px;
-  font-size: 45px;
-}
-
-.resume-item {
-  position: relative;
-}
-
-.resume-item:after {
-  top: 43px;
-  /*left: -40px;*/
-  width: 41px;
-  height: 1px;
-  content: "";
-  position: absolute;
-  background-color: #151812;
-}
-
-.resume-item:before {
-  position: absolute;
-  background-color: #151812;
-  height: 100px;
-  width: 1px;
-  top: 43px;
-  /*left: -41px;*/
-  content: "";
-
-}
-
 .resume-body {
   position: relative;
   padding-top: 10px;
@@ -921,63 +862,26 @@ body .title-bg {
   padding-left: 30px;
 }
 
-.el-icon:before {
-  top: 38px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  background: #f21e4e;
-}
-
-
-/*skills section*/
-.text-icon {
+/***************desktop version about page resume section skills part***********/
+.skill-container {
   display: flex;
-  position: relative;
-  margin-bottom: 30px;
+  justify-content: center;
+  flex-flow: row;
+  margin-top: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.star-rateing i {
-  font-size: .7em;
-  position: relative;
-}
-
-.text-icon p {
-  font-size: 1.1em;
-  text-transform: uppercase;
-  font-weight: 500;
-  position: absolute;
-  top: -23px;
-  /*left: 43px;*/
-}
-
-.skill-body {
-  padding-top: 30px;
-  margin-bottom: 10px;
-}
-
-.skill-row {
-  color: black;
-  width: 100%;
-}
-
-.skill-row:nth-child(1) {
-  /* margin-right: 100px; */
-}
-
+/*desktop version about page resume section skill part title*********/
 .skill-title {
   line-height: 1;
   position: relative;
   padding-left: 50px;
-  /*margin-bottom: 40px;*/
-}
 
+}
 .skill-title:before {
   top: -8px;
-  /*left: -7px;*/
+  left: -7px;
   width: 45px;
   height: 45px;
   display: block;
@@ -986,34 +890,11 @@ body .title-bg {
   border-radius: 50%;
   background-color: #f21e4e;
 }
-
-#resume > div > div > div.skill-container > div:nth-child(1) > h4 {
-  /*right: 30px;*/
+/***********************desktop version about page resume section skill list part**********/
+.skill-row {
+  color: black;
+  width: 100%;
 }
-
-#resume > div > div > div.skill-container > div:nth-child(2) > h4 {
-  /*left: 55px;*/
-}
-
-.skill-icon i{
-  position: relative;
-  font-size: 45px;
-  color: #111111;
-  bottom: 28px;
-  /*right: 19px;*/
-}
-#resume > div > div > div.skill-container > div:nth-child(2) > span {
-  position: relative;
-  font-size: 50px;
-  color: #111111;
-  bottom: 34px;
-  /*left: 56px;*/
-}
-
-.skill-items {
-  display: flex;
-}
-
 .skill-items .second-items {
   width: 50%;
   margin-left: 23px;
@@ -1023,27 +904,47 @@ body .title-bg {
   width: 50%;
 
 }
-
-#resume > div > div > div.skill-container > div:nth-child(1) > div {
-  margin-top: 20px;
-  position: relative;
-  /*right: 16px;*/
-}
-
-#resume > div > div > div.skill-container > div:nth-child(2) > div {
-  margin-top: 9px;
-  position: relative;
-  /*left: 80px;*/
-}
-
-.skill-container {
+.skill-items {
   display: flex;
-  justify-content: center;
-  flex-flow: row;
-  margin-top: 40px;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  margin-top: 9px;
+
+}
+.skill-body {
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+#resume > div > div > div.skill-container > div:nth-child(1) > h4 {
+  right: 30px;
+}
+
+#resume > div > div > div.skill-container > div:nth-child(2) > h4 {
+  left: 55px;
+}
+#resume > div > div > div.skill-container > div:nth-child(2) > span {
+  left: 56px;
+}
+
+
+.text-icon {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+.text-icon p {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: absolute;
+  top: -23px;
+
+}
+/*******************desktop version about page resume section skill star rating part*/
+.star-rateing i {
+  font-size: .7em;
+  position: relative;
 }
 
 
@@ -1136,7 +1037,7 @@ body .title-bg {
    ========================================================================== */
 
 @media only screen and (max-width: 767px) {
-
+  /****************mobile version home page properties******************/
   .mobile-view {
     display: block;
     position: relative;
@@ -1159,11 +1060,12 @@ body .title-bg {
     padding-bottom: 50px;
   }
 
+  /*****************mobile version home page type js ******************/
   #typing {
     color: #f21e4e;
   }
 
-  /*togglebar*/
+  /*******************mobile version home page navigation ***************/
   .menu-toggle {
     right: 22px;
     top: 22px;
@@ -1215,7 +1117,7 @@ body .title-bg {
     position: absolute;
   }
 
-  /*navigation*/
+  /*******************mobile version home page collaped navigation*************/
   .navbar {
     display: none;
     position: fixed;
@@ -1223,7 +1125,7 @@ body .title-bg {
     width: 0%;
     height: 109%;
     top: -2px;
-    z-index: 6;
+    z-index: 200;
   }
 
   .navbar .cross {
@@ -1240,22 +1142,22 @@ body .title-bg {
 
   .navbar .cross i {
     line-height: 35px;
-    margin-left: 11px;
     color: white;
   }
 
- ul {
+  .menuToggleBar ul {
     position: absolute;
     top: 23vh;
     left: 21vw;
     padding: 0;
   }
-  ul li a {
+
+  .menuToggleBar ul li a {
     text-decoration: none !important;
     color: #2b2a2a;
   }
 
-  ul li {
+  .menuToggleBar ul li {
     list-style-type: none;
     margin: 5.8vh;
     font-size: 1.2em;
@@ -1263,11 +1165,11 @@ body .title-bg {
     text-transform: uppercase;
   }
 
- i {
+  .menuToggleBar i {
     margin-right: 20px;
   }
 
-  /*image section */
+  /*mobile version home page image section *******************/
   .image {
     margin-top: 15vh;
     left: 0px;
@@ -1284,7 +1186,7 @@ body .title-bg {
     border: 10px solid #f21e4e;
   }
 
-  /*introduction */
+  /******************mobile version home page introduction************************ */
   .intro {
     margin-top: 10vh;
     position: static;
@@ -1325,7 +1227,7 @@ body .title-bg {
     font-size: 1em;
   }
 
-  /*button section*/
+  /*************mobile version home page button****************/
   .button-custom {
     margin-left: 19vw;
     margin-top: 3.5vh;
@@ -1342,7 +1244,7 @@ body .title-bg {
     margin-right: 20px;
   }
 
-  /*copyright*/
+  /******************mobile version copyright************/
   .copyright {
     position: relative;
     top: 94vh;
@@ -1354,63 +1256,42 @@ body .title-bg {
   .copyright a {
     color: #555555;
   }
-  .personal-detail{
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin-top: 31px;
-    margin-bottom: 40px;
 
-  }
-  .about-intro {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
+  /********************mobile version about page image****************/
   .about-image img {
     height: 36vh;
     position: static;
     top: 0vh;
     left: 0vw;
   }
-  .personal-info-detail ul{
 
-   position: static;
-    padding: 0;
-
-  }
-  .personal-info-detail ul li{
-    margin: 0;
-  }
-  .resume-download{
+  /*mobile version about page navigation *****************/
+  .about-me-header {
+    position: fixed;
     display: flex;
-    justify-content: center;
-    margin-left: -65px;
+    justify-content: space-around;
+    background-color: #cccccc;
+    border-bottom: 1px solid #aaaaaa;
+    width: 100%;
+    z-index: 100;
+
   }
 
- .about-me-header{
-   position: fixed;
-   display: flex;
-   justify-content: space-around;
-   background-color: #cccccc;
-   border-bottom: 1px solid #aaaaaa;
-   width: 100%;
-   z-index: 100;
-
- }
   .title-section {
     position: static;
     text-align: left;
     padding: 20px 15px;
 
   }
+
   .title-section h1 {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
   }
-  .mobile-page-navigation{
+
+  /*****************mobile version about page second navigation**********/
+  .mobile-page-navigation {
     padding-top: 100px;
     display: flex;
     justify-content: center;
@@ -1419,33 +1300,24 @@ body .title-bg {
     margin-right: auto;
 
   }
-  .mobile-page-navigation{
+
+  .mobile-page-navigation {
     text-align: center;
   }
-  .mobile-version-header{
-   font-size: 18px;
+
+  .mobile-version-header {
+    font-size: 18px;
     font-weight: 600;
     padding: 10px 20px;
     text-transform: uppercase;
   }
-  .mobile-version-header a{
+
+  .mobile-version-header a {
     text-decoration: none;
     color: #888888;
   }
-  .personal-detail h2{
-    color: #f21e4e;
-   padding-top: 10px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px #2b2a2abd;
-  }
-  .horizontal-line div{
-    background: #bcbcbc none repeat scroll 0 0;
-    height: 2px;
-    margin: 0 auto;
-    width: 77px;
-  }
-  .common-underline{
+
+  .common-underline {
     position: relative;
     width: 139px;
     height: 2px;
@@ -1453,6 +1325,7 @@ body .title-bg {
     display: none;
     transition: 0.3s;
   }
+
   #service-header {
     position: relative;
     width: 82px;
@@ -1460,6 +1333,7 @@ body .title-bg {
     height: 2px;
     background-color: #cccccc;
   }
+
   #resume-header {
     position: relative;
     width: 76px;
@@ -1467,115 +1341,229 @@ body .title-bg {
     height: 2px;
     background-color: #cccccc;
   }
-  .mobile-version-header a:hover .common-underline.active{
-   display: block;
+
+  .mobile-version-header a:hover .common-underline.active, .active {
+    display: block;
   }
 
-  .common-container{
-   align-items: center;
+  /****************mobile version about page personal info**************/
+  .personal-detail {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 31px;
+    margin-bottom: 40px;
   }
-  .square-container{
+
+  .personal-detail h2 {
+    font-size: 2em;
+    color: #f21e4e;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #2b2a2abd;
+  }
+
+  .about-intro {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .personal-info-detail {
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+  .personal-info-detail ul {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+
+  }
+
+  .personal-info-detail ul li {
+    font-size: 1.5em;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+
+  }
+
+  .personal-info-detail h6 {
+    margin: 0;
+  }
+
+  /***************mobile version about page button************/
+  .resume-download {
+    display: flex;
+    justify-content: center;
+    width: 76%;
+  }
+
+  /********mobile version about page common div properties*******/
+  .common-container {
+    align-items: center;
+  }
+
+  .common-title h2 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #f21e4e;
+    text-shadow: 1px 1px 2px #2b2a2abd;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /*************mobile version about page service section***********/
+  #service {
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  .square-container {
     flex-flow: row wrap;
     margin-top: 1px;
-    margin-bottom: 0px;
-
+    margin-bottom: 0px
   }
-  .square-shape{
+
+  .square-shape {
     margin-bottom: 30px;
   }
- #service{
-   margin-top: 31px;
-   margin-bottom: 31px;
- }
- .common-title h2{
-   font-size: 1.5em;
-   font-weight: 600;
-   padding-top: 10px;
-   padding-bottom: 20px;
-   text-transform: uppercase;
-   color: #f21e4e;
-   text-shadow: 1px 1px 2px #2b2a2abd;
- }
 
+  /***********mobile version about page resume section education and experience part*********/
+  #resume {
+    margin: 33px 0;
+  }
 
- .resume-container{
-   flex-flow: row wrap;
-   width: 100%;
-
- }
-  .resume-row {
+  .resume-container {
+    flex-flow: row wrap;
     width: 100%;
+    margin-top: 5px;
+  }
+
+  .resume-row {
+    width: 80%;
     position: static;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-  }
-  .resume-row:nth-child(1) {
-    margin-right:0px;
-  }
-  .resume-title{
-    width: 100%;
-    text-align: center;
-    padding-left: 10px;
-  }
-  .resume-title:before{
-    /*left: 98px;*/
-  }
-  .resume-icon{
-    right: 50px;
-  }
-  .resume-item:before {
-    /*top: 44px;*/
-    /*left: -41px;*/
-  }
-  .resume-item:after{
-    top: 44px;
-    /*left: -40px;*/
-  }
-  .el-icon:before{
-    top: 40px;
-  }
-  .resume-row ul li{
-    margin: 0px;
-  }
-  .resume-item{
-    top: -89px;
-  }
-  .resume-body{
-    padding-left: 0px;
+    margin-bottom: 30px;
+
   }
 
+  .resume-title {
+    width: 100%;
+    text-align: center;
+    padding-left: 54px;
+  }
+
+  .resume-row h4 {
+    font-size: 1.5em;
+  }
+
+  .resume-body {
+    padding-left: 17px;
+    padding-top: 6px;
+  }
+
+  .resume-title:before {
+    left: 59px;
+  }
+
+  .resume-icon {
+    right: 69px;
+    bottom: 51px;
+  }
+
+  .resume-row:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .resume-item {
+    top: -14px;
+    font-size: 20px;
+  }
+
+  .el-icon:before {
+    top: 40px;
+  }
+
+  .resume-row ul li {
+    margin: 0px;
+  }
+
+
+  /*************mobile version about page resume section skill part********/
   .skill-container {
     flex-flow: row wrap;
     width: 100%;
-
-  }
-  .skill row .skill-items{
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-
+    margin-top: 5px;
   }
 
+  .skill-row {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 93px;
+  }
 
+  .skill-row h4 {
+    font-size: 1.5em;
+  }
+
+  .skill-title {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+ .skill-items{
+   font-size: 20px;
+ }
+  .skill-title:before {
+    left: 59px;
+  }
+   .skill-icon i{
+     right: -158px;
+     bottom: 4px;
+  }
+  #resume > div > div > div.skill-container > div:nth-child(2) > span {
+   left: 98px;
+  }
+  #resume > div > div > div.skill-container > div:nth-child(1) > h4{
+    right: -9px;
+  }
+  #resume > div > div > div.skill-container > div:nth-child(2) > h4{
+    left: 23px;
+  }
+  .text-icon{
+    margin-bottom: 57px;
+  }
+  .star-rateing i{
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /*******************tablet version home page properties**********/
   .tablet-view {
     z-index: 5;
     display: block;
   }
-
   .header {
     display: none;
   }
 
-  /*video*/
+  /***************tablet version home page background video******************/
   #myVideo {
     min-width: 0;
   }
-
-  /*image*/
+  /*****************tablet version home page image ********************/
   .image {
     margin-top: 15vh;
     left: 30vw;
@@ -1583,26 +1571,23 @@ body .title-bg {
     position: absolute;
     margin-top: 0;
   }
-
   .image .image2 {
     display: block;
     position: static;
     top: 0px;
-    height: vh;
     left: 0px;
+    height: 28vh;
     border-radius: 100%;
     border: 10px solid #f21e4e;
   }
-
   .image #triangle-bottomright {
     display: none;
   }
-
   .image .box-shadow {
     display: none;
   }
 
-  /*introduction*/
+  /**************** tablet version home page introduction*************/
   .intro {
     margin-top: 10vh;
     position: absolute;
@@ -1639,7 +1624,7 @@ body .title-bg {
     font-size: 1.2em;
   }
 
-  /*button section*/
+  /*****************tablet version home page button section*********/
   .button-custom {
     margin-left: 26vw;
     margin-top: 30px;
@@ -1656,7 +1641,7 @@ body .title-bg {
     margin-right: 20px;
   }
 
-  /*navigation section*/
+  /******************** tablet version collaped navigation section******************/
   .navbar {
     display: none;
     position: fixed;
@@ -1665,7 +1650,6 @@ body .title-bg {
     height: 100%;
     z-index: 2;
   }
-
   .cross {
     display: none;
     width: 46px;
@@ -1677,26 +1661,22 @@ body .title-bg {
     top: 36px;
     background-color: #f21e4e;
   }
-
   .cross i {
-    line-height: 42px;
-    margin-left: 16px;
+    line-height: 43px;
     color: white;
   }
-
-  ul {
+  .menuToggleBar ul {
     position: absolute;
     top: 23vh;
     left: 2.67vw;
     padding: 0;
   }
-
-  ul li a {
+  .menuToggleBar ul li a {
     text-decoration: none !important;
     color: #2b2a2a;
   }
 
-  ul li {
+  .menuToggleBar ul li {
     list-style-type: none;
     margin: 5.8vh 0 5.8vh 0;
     font-size: 1.2em;
@@ -1704,11 +1684,11 @@ body .title-bg {
     text-transform: uppercase;
   }
 
-  i {
+  .menuToggleBar i {
     margin-right: 20px;
   }
 
-  /*togglebar*/
+  /**************tablet version navigation*********************/
   .menu-toggle {
     right: 52px;
     top: 36px;
@@ -1759,7 +1739,7 @@ body .title-bg {
     position: absolute;
   }
 
-  /*copyright*/
+  /*******************tablet version copyright*************************/
   .copyright {
     left: 35vw;
   }
