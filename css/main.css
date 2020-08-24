@@ -87,6 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /**************************desktop version home page style properties**********************************/
+
 /*body */
 .mobile-view {
   display: none;
@@ -387,8 +388,19 @@ i {
   color: #676565cc;
   font-size: 14px;
 }
+#about-page-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #676565cc;
+  font-size: 14px;
+}
 
 .copyright a {
+  text-decoration: none !important;
+  color: #676565cc;
+}
+#about-page-copyright a{
   text-decoration: none !important;
   color: #676565cc;
 }
@@ -402,7 +414,7 @@ section.active {
 #mySidenav {
   position: fixed;
   top: 45vh;
-  z-index: 999;
+  z-index: 1;
 }
 
 .both .hover-action {
@@ -474,6 +486,7 @@ section.active {
 }
 
 .title-section h1 {
+  font-family: 'Abril Fatface', cursive;
   font-size: 56px;
   font-weight: 900;
   color: #fff;
@@ -580,7 +593,7 @@ body .title-section h1 {
 
 .personal-info-detail h6 {
   font-weight: 200;
-  color: #aaaaaa;
+  color: #555;
 }
 
 .personal-info-detail h6 span {
@@ -1558,7 +1571,7 @@ body .title-section h1 {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /*******************tablet version home page properties**********/
   .tablet-view {
-    z-index: 5;
+    z-index: 4;
     display: block;
   }
   .header {
@@ -1651,10 +1664,15 @@ body .title-section h1 {
   .navbar {
     display: none;
     position: fixed;
-    background-color: white;
+    background-color: #f1f1f1;
     width: 0%;
     height: 100%;
-    z-index: 2;
+    z-index: 1000;
+    top: 0px;
+    -webkit-box-shadow: 8px 2px 10px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 2px 10px -7px rgba(0,0,0,0.75);
+    box-shadow: 8px 2px 10px -7px rgba(0,0,0,0.75);
+
   }
   .cross {
     display: none;
@@ -1676,6 +1694,7 @@ body .title-section h1 {
     top: 23vh;
     left: 2.67vw;
     padding: 0;
+
   }
   .menuToggleBar ul li a {
     text-decoration: none !important;
@@ -1752,6 +1771,95 @@ body .title-section h1 {
 
   .copyright a {
     color: #aaaaaa;
+  }
+
+/*  *********************tablet version about page style properties*********** */
+
+  .common-title h2{
+    font-size: 2em;
+  }
+/*  ***********************************tablet version about page personal info part****************/
+  .personal-detail{
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+  }
+  .about-intro{
+    justify-content: center;
+    align-items: center;
+  }
+  /**************tablet version about page image section********************/
+  .about-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .about-image img{
+    position: static;
+    left: 0;
+    top: 0;
+    height: 35vh;
+  }
+  /**********************tablet version about page button section*******************/
+  .resume-download{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+   font-size: 16px;
+  }
+  .custom-btn{
+    height: 35px;
+    padding-top: 16px;
+  }
+  /*******************tablet version about page services part******************/
+  .square-container{
+    flex-flow: row wrap;
+    width: 87%;
+  }
+  .square-shape{
+    margin-bottom: 32px;
+    width: 281px;
+    height: 321px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .single-service{
+    font-size: 19px;
+  }
+  .square-container .icon-box-fonts{
+    margin-left: 113px;
+  }
+  /*******************tablet version about page resume section education and experience part******************/
+  .resume-container{
+    width: 83%;
+  }
+  .resume-title{
+    font-size: 22px;
+  }
+  .resume-icon{
+    bottom: 44px;
+    right: -3px;
+  }
+  .resume-body{
+    padding-top: 1px;
+  }
+  .resume-body h5{
+    font-size: 1.2em;
+  }
+  .resume-body h6{
+    font-size: 1em;
+  }
+  .resume-body p{
+    font-size: 1.2em;
+    width: 100%;
+  }
+  /*************************tablet version about page resume section skill part**************/
+  .skill-items .second-items{
+    width: 69%;
+  }
+  .skill-title{
+    font-size: 22px;
   }
 
 }
