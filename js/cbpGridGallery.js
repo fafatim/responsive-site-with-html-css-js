@@ -4,12 +4,12 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
 ;( function( window ) {
-	
+
 	'use strict';
 
 	var docElem = window.document.documentElement,
@@ -36,7 +36,7 @@
 	function getViewportW() {
 		var client = docElem['clientWidth'],
 			inner = window['innerWidth'];
-		
+
 		if( client < inner )
 			return inner;
 		else
@@ -44,7 +44,7 @@
 	}
 
 	function extend( a, b ) {
-		for( var key in b ) { 
+		for( var key in b ) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -132,6 +132,42 @@
 			}
 		} );
 
+    document.addEventListener('touchstart', handleTouchStart, false);
+    document.addEventListener('touchmove', handleTouchMove, false);
+    var xDown = null;
+    var yDown = null;
+
+    function handleTouchStart(evt) {
+      xDown = evt.touches[0].clientX;
+      yDown = evt.touches[0].clientY;
+    };
+
+    function handleTouchMove(evt) {
+      if ( ! xDown || ! yDown ) {
+        return;
+      }
+      var xUp = evt.touches[0].clientX;
+      var yUp = evt.touches[0].clientY;
+      var xDiff = xDown - xUp;
+      var yDiff = yDown - yUp;
+
+      if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        if ( xDiff > 0 ) {
+          /* left swipe */
+          self._navigate( 'next' );
+        } else {
+          /* right swipe */
+          self._navigate( 'prev' );
+        }
+      } else {
+        // up or down swipe for close
+        self._closeSlideshow();
+      }
+      /* reset values */
+      xDown = null;
+      yDown = null;
+    };
+
 		// trick to prevent scrolling when slideshow is visible
 		window.addEventListener( 'scroll', function() {
 			if ( self.isSlideshowVisible ) {
@@ -153,7 +189,7 @@
 
 		// set viewport items (current, next and previous)
 		this._setViewportItems();
-		
+
 		// add class "current" and "show" to currentItem
 		classie.addClass( this.currentItem, 'current' );
 		classie.addClass( this.currentItem, 'show' );
@@ -180,7 +216,7 @@
 		}
 
 		this.isAnimating = true;
-		
+
 		// reset viewport items
 		this._setViewportItems();
 
@@ -293,7 +329,7 @@
 				// remove classes show and current from the slideshow items
 				classie.removeClass( self.currentItem, 'current' );
 				classie.removeClass( self.currentItem, 'show' );
-				
+
 				if( self.prevItem ) {
 					classie.removeClass( self.prevItem, 'show' );
 				}
