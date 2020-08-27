@@ -972,9 +972,11 @@ body .title-section h1 {
   margin-left: auto;
   flex-flow: row wrap;
 }
+/**************desktop version portfolio title************/
 .title-section{
   width: 100%;
 }
+/*********************desktop version portfolio grid*************/
 .grid-gallery{
  display: flex;
   justify-content: center;
@@ -990,14 +992,9 @@ body .title-section h1 {
   margin-right: auto;
   margin-top: 40px;
   margin-bottom: 60px;
-  width: 87%;
+  width: 76%;
 }
-.grid-wrap ul li{
-  list-style: none;
-  position: relative;
-  text-align: center;
-
-}
+/**************************desktop version portfolio page ul section****************/
 .grid-wrap ul {
   padding: 0;
   margin: 0;
@@ -1006,9 +1003,22 @@ body .title-section h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
 }
-.grid figure div{
+.grid-wrap ul .item{
+  list-style: none;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 20px 20px 0;
+  overflow: hidden;
+}
+/*************desktop version portfolio page portfolio img section************/
+.grid li img{
+  height: 25vh;
+  border-radius: 2%;
+}
+/************desktop version portfolio hover section*************/
+.item .hover-wrap{
   display: none;
   position: absolute;
   top: 0;
@@ -1024,11 +1034,182 @@ body .title-section h1 {
   height: 100%;
   border-radius: 2%;
 }
-
-.grid li img{
-  height: 25vh;
-  border-radius: 2%;
+.hover-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
 }
+.table-cell{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/**************desktop version portfolio page slideshow**************/
+.slideshow {
+  position: fixed;
+  background: rgba(0,0,0,0.85);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1111;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+
+}
+
+.slideshow-open .slideshow {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+ .slideshow ul {
+  width: 100%;
+  height: 96%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translate3d(0,0,150px);
+  transform: translate3d(0,0,150px);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+ .slideshow ul.animatable > li {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+ .slideshow-open .slideshow ul {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+ .slideshow ul > li {
+  width: 660px;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -280px 0 0 -330px;
+  visibility: hidden;
+}
+.mb-2 {
+  margin-bottom: .5rem !important;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #aaaaaa;
+}
+.mb-2 i{
+  margin-right: 10px;
+  font-size: 20px;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+ .slideshow ul > li.show {
+  visibility: visible;
+}
+
+ .slideshow ul > li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  z-index: 111;
+  border-radius: 10px;
+}
+
+ .slideshow ul > li.current:after {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+ .slideshow figure {
+   width: 90%;
+   height: 100%;
+   background: white;
+  padding: 30px;
+  overflow: auto;
+  border-radius: 10px;
+   margin: 0;
+}
+ .grid-gallery figure img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  transition: .3s;
+}
+ .slideshow a {
+  text-decoration: underline;
+}
+.slideshow ul li{
+  list-style: none;
+
+}
+ .slideshow figcaption {
+  margin-bottom: 15px;
+}
+
+ .slideshow figcaption h3 {
+  text-transform: uppercase;
+  padding-bottom: 35px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 33px;
+   color: #f21e4e;
+   margin: 0;
+}
+/*****************desktop version lightbox Navigation ***************/
+.slideshow nav span {
+  position: fixed;
+  z-index: 1000;
+  color: #59656c;
+  text-align: center;
+  padding: 3%;
+  cursor: pointer;
+  font-size: 2.3em;
+}
+
+.slideshow nav span.nav-prev,
+.slideshow nav span.nav-next {
+  font-size: 4.5em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.slideshow nav span.nav-next {
+  right: 0;
+}
+
+.slideshow nav span.nav-close {
+  top: 0;
+  right: 0;
+  padding: 0.5em 1em;
+  color: #31373a;
+}
+
 
 
 

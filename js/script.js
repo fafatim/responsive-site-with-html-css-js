@@ -65,7 +65,38 @@ $(window).on('scroll', function () {
   });
 });
 
+$(window).load(function(){
 
+
+
+  $('#container> li.item').hover(function(event){
+    // mouseenter
+    var $item = $(this),
+      direction = $item.entry({e:event});
+
+    // fix jquery slide issue when moving cursor too fast
+    if($item.hasClass('opened')) $item.find('.hover-wrap').stop(true,true).show();
+
+    $.when($item.find('.hover-wrap').stop(true, true).show("slide", { direction: direction}, 255, 'easeOutQuad')).done(function(){
+      $item.addClass('opened');
+    });
+
+    // fix javascript missing events when moving cursor too fast.
+    // hover may stay active if javascript miss mousemove event, simply hide them
+    var inverted_direction = $item.entry({e:event, invert: true});
+    $item.siblings('.opened').removeClass('opened')
+      .find('.hover-wrap').hide("slide", { direction: direction}, 255, 'easeOutQuad');
+
+  }, function(event){
+    // mouseleave
+    var $item = $(this),
+      direction = $item.entry({e:event});
+    $.when($item.find('.hover-wrap').stop(true, true).hide("slide", { direction: direction}, 255, 'easeOutQuad')).done(function(){
+      $item.removeClass('opened');
+    });
+
+  });
+});
 
 
 
