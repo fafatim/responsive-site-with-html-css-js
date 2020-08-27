@@ -131,6 +131,7 @@
 				}
 			}
 		} );
+    ////////////////left and right swipe action for all devices///////////////////
 
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);
@@ -167,6 +168,7 @@
       xDown = null;
       yDown = null;
     };
+    //////////// swipe action ends///////////////////////////
 
 		// trick to prevent scrolling when slideshow is visible
 		window.addEventListener( 'scroll', function() {
