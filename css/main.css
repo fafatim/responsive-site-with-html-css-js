@@ -1279,8 +1279,62 @@ body .title-section h1 {
   padding: 0.5em 1em;
   color: #31373a;
 }
+/******************desktop version contact page styling properties************/
+.contact-me{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  color: #2b2a2a;
+}
+.contact-header{
+  width: 46%;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.contact-header p{
+  font-size: 16px;
+}
+.get-in-touch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.hire-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.contact-icon i {
+  width: 60px;
+  height: 38px;
+  text-align: center;
+  background: #f21e4e;
+  border-radius: 100%;
+  color: #fff;
+  padding-top: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
 
-
+}
+.contact-icon{
+  margin: 30px;
+  text-align: center;
+}
+.contact-icon a{
+  text-decoration: none;
+  color: black;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
