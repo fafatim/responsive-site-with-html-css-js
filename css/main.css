@@ -251,7 +251,7 @@ body .preloader {
   font-weight: 600;
   padding: 12px 28px;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 25px;
   z-index: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -275,7 +275,8 @@ body .preloader {
   transform-origin: center;
   -webkit-transform: scale(0);
   transform: scale(0);
-  border-radius: 5px;
+  border-radius: 25px;
+
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -636,7 +637,9 @@ body .title-section h1 {
   height: 30px;
   color: #fff;
   border-radius: 35px;
-  padding: 10px 10px 6px 10px;
+  padding: 10px 7px 6px 5px;
+  text-align: center;
+  text-transform: uppercase;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
@@ -817,6 +820,7 @@ body .title-section h1 {
   line-height: 1;
   position: relative;
   padding-left: 50px;
+  font-size: 22px;
 }
 
 .resume-title:before {
@@ -834,7 +838,7 @@ body .title-section h1 {
 /*************************desktop version about page resume section education and experience title icon ****************/
 .resume-icon {
   position: relative;
-  bottom: 31px;
+  bottom: 42px;
   right: -5px;
   font-size: 45px;
   color: #111111;
@@ -849,6 +853,7 @@ body .title-section h1 {
   color: #111111;
 
 }
+
 
 /**************desktop version about page resume section education and experience detail**********/
 .resume-item {
@@ -902,11 +907,24 @@ body .title-section h1 {
 
 .resume-body {
   position: relative;
-  padding-top: 10px;
+  padding-top: 5px;
   margin-bottom: 10px;
   padding-left: 30px;
 }
-
+.resume-body p{
+  color: #555555;
+}
+.resume-body h5{
+  font-size: 16px;
+}
+.resume-body h6{
+  font-size: 14px;
+  font-weight: 600;
+}
+.resume-body .certification-language{
+  font-size: 22px;
+  margin-top: 24px;
+}
 /***************desktop version about page resume section skills part***********/
 .skill-container {
   display: flex;
@@ -924,7 +942,7 @@ body .title-section h1 {
   line-height: 1;
   position: relative;
   padding-left: 50px;
-
+  font-size: 22px;
 }
 
 .skill-title:before {
@@ -1017,12 +1035,14 @@ body .title-section h1 {
   margin-left: auto;
   flex-flow: row wrap;
 }
-.portfolio-contain-wrapper-top{
+
+.portfolio-contain-wrapper-top {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   padding-bottom: 50px;
 }
+
 /**************desktop version portfolio title************/
 .title-section {
   width: 100%;
@@ -1072,6 +1092,7 @@ body .title-section h1 {
 .grid li img {
   height: 25vh;
   border-radius: 2%;
+  border: 1px solid #aaaaaa;
 }
 
 /************desktop version portfolio hover section*************/
@@ -1178,7 +1199,8 @@ body .title-section h1 {
   margin-right: 10px;
   font-size: 20px;
 }
-.portfolio-project-detail{
+
+.portfolio-project-detail {
   width: 50%;
   margin-bottom: 10px;
   font-weight: 500;
@@ -1279,24 +1301,29 @@ body .title-section h1 {
   padding: 0.5em 1em;
   color: #31373a;
 }
+
 /******************desktop version contact page styling properties************/
-.contact-me{
+.contact-me {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
   color: #2b2a2a;
+
 }
-.contact-header{
+
+.contact-header {
   width: 46%;
   text-align: center;
   font-size: 24px;
   text-transform: uppercase;
 }
-.contact-header p{
+
+.contact-header p {
   font-size: 16px;
 }
-.get-in-touch{
+
+.get-in-touch {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1304,7 +1331,8 @@ body .title-section h1 {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-.hire-me{
+
+.hire-me {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1312,6 +1340,7 @@ body .title-section h1 {
   margin-top: 50px;
   margin-bottom: 30px;
 }
+
 .contact-icon i {
   width: 60px;
   height: 38px;
@@ -1322,19 +1351,22 @@ body .title-section h1 {
   padding-top: 20px;
   font-size: 24px;
   margin-bottom: 10px;
-  -webkit-box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
-  box-shadow: -1px -1px 12px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px -1px 12px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 12px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px -1px 12px -1px rgba(0, 0, 0, 0.75);
 
 }
-.contact-icon{
+
+.contact-icon {
   margin: 30px;
   text-align: center;
 }
-.contact-icon a{
+
+.contact-icon a {
   text-decoration: none;
   color: black;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1535,7 +1567,7 @@ body .title-section h1 {
 
   .menuToggleBar ul {
     position: absolute;
-    top: 23vh;
+    top: 28vh;
     left: 21vw;
     padding: 0;
   }
@@ -1559,7 +1591,7 @@ body .title-section h1 {
 
   /*mobile version home page image section *******************/
   .image {
-    margin-top: 15vh;
+    margin-top: 12vh;
     left: 0px;
     top: 0px;
     position: static;
@@ -1576,7 +1608,7 @@ body .title-section h1 {
 
   /******************mobile version home page introduction************************ */
   .intro {
-    margin-top: 10vh;
+    margin-top: 7vh;
     position: static;
     color: #2b2a2a;
     text-align: center;
@@ -1591,14 +1623,15 @@ body .title-section h1 {
 
   .intro h2 {
     font-family: 'Dancing Script', cursive;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 2.5em;
-    text-shadow: 0px 2px 6px #2b2a2a;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: black;
   }
 
   .intro h3 {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: capitalize;
     margin: 10px 0 0 0;
   }
@@ -1664,28 +1697,33 @@ body .title-section h1 {
     z-index: 100;
     left: 0;
   }
-  /**********mobile version about and portfolio page title section***********/
 
+  /**********mobile version about and portfolio page title section***********/
   .title-section {
     display: none;
   }
+
   .portfolio-about-title-section {
     text-align: left;
     padding: 20px 22px;
   }
+
   .portfolio-about-title-section {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
   }
+
   .portfolio-about-title-section span {
     color: #f21e4e;
   }
+
   .portfolio-about-title-section h1 {
     margin: 0;
     font-size: 1em;
     text-transform: uppercase;
   }
+
   /*****************mobile version about page second navigation**********/
   .mobile-page-navigation {
     padding-top: 100px;
@@ -1696,6 +1734,7 @@ body .title-section h1 {
     margin-right: auto;
 
   }
+
   .mobile-page-navigation {
     text-align: center;
   }
@@ -1748,6 +1787,7 @@ body .title-section h1 {
     flex-flow: row wrap;
     margin-top: 31px;
     margin-bottom: 40px;
+
   }
 
   .personal-detail h2 {
@@ -1769,15 +1809,15 @@ body .title-section h1 {
   .personal-info-detail {
     display: flex;
     justify-content: center;
-
+    align-items: center;
 
   }
+
 
   .personal-info-detail ul {
     padding: 0;
     margin: 0;
     font-size: 20px;
-
   }
 
   .personal-info-detail ul li {
@@ -1857,14 +1897,25 @@ body .title-section h1 {
     text-align: center;
     padding-left: 54px;
   }
-
+  #education-others:before{
+    left: 18px;
+  }
   .resume-row h4 {
     font-size: 1.5em;
   }
 
   .resume-body {
     padding-left: 17px;
-    padding-top: 6px;
+    padding-top: 3px;
+  }
+  .resume-body h5{
+    font-size: 18px;
+  }
+  .resume-body h6{
+   font-size: 16px;
+  }
+  .resume-body .certification-language{
+    margin-top: 28px;
   }
 
   .resume-title:before {
@@ -1875,7 +1926,10 @@ body .title-section h1 {
     right: 69px;
     bottom: 51px;
   }
-
+ #education-others-icon{
+   right: 110px;
+   bottom: 46px;
+ }
   .resume-row:nth-child(1) {
     margin-right: 0px;
   }
@@ -1906,6 +1960,9 @@ body .title-section h1 {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 93px;
+  }
+  .skill-container #second-skill-row{
+    position: static;
   }
 
   .skill-row h4 {
@@ -1950,13 +2007,17 @@ body .title-section h1 {
   .star-rateing i {
     margin-top: 10px;
   }
+  /************mobile version about page and portfolio page copyright section************/
+  #about-page-copyright{
+    display: none;
+  }
 
   /*  *****************mobile version portfolio page style properties***************/
-
   .header {
     display: none;
   }
-  .portfolio-contain-wrapper-top{
+
+  .portfolio-contain-wrapper-top {
     display: none;
   }
 
@@ -1967,6 +2028,9 @@ body .title-section h1 {
   }
 
   /*********mobile version portfolio page project styling****************/
+  .grid-wrap{
+    margin-bottom: 23px;
+  }
   .grid-wrap ul {
     margin-top: 60px;
   }
@@ -1974,11 +2038,14 @@ body .title-section h1 {
   .grid-wrap ul .item {
     margin: 0 0 23px 0;
   }
+
   .grid-gallery figure img {
-    width: 100%
+    width: 100%;
+    border: 1px solid #aaaaaa;
   }
+
   /*****************mobile version portfolio page project slidshow styling*********/
-  .slideshow{
+  .slideshow {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -1991,11 +2058,11 @@ body .title-section h1 {
     padding-right: 0;
   }
 
-  .slideshow ul{
+  .slideshow ul {
     padding-left: 0;
   }
 
-  .slideshow ul li{
+  .slideshow ul li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2005,9 +2072,11 @@ body .title-section h1 {
     top: 55%;
     left: 50%;
   }
-  .portfolio-project-detail{
+
+  .portfolio-project-detail {
     width: 100%;
   }
+
   /************mobile version portfolio page slideshow navigation***************/
   .slideshow nav span {
     font-size: 2em;
@@ -2017,19 +2086,43 @@ body .title-section h1 {
   .slideshow nav span.nav-next {
     font-size: 3em;
   }
-  .slideshow nav span.nav-prev, .slideshow nav span.nav-next{
+
+  .slideshow nav span.nav-prev, .slideshow nav span.nav-next {
     top: 5%;
   }
-  .slideshow nav span.nav-close{
+
+  .slideshow nav span.nav-close {
     right: 36.5vw;
   }
-  .slideshow ul > li:after{
+
+  .slideshow ul > li:after {
     background: white;
   }
-  #grid-gallery > section.slideshow > nav > span.icon.nav-prev{
-  left: 0;
-}
 
+  #grid-gallery > section.slideshow > nav > span.icon.nav-prev {
+    left: 0;
+  }
+
+  /****************mobile version contact page style properties*************/
+  .contact-me {
+    margin-top: 100px;
+  }
+
+  .contact-header {
+    width: 83%;
+  }
+
+  .get-in-touch {
+    flex-flow: row wrap;
+    width: 94%;
+    margin-top: 34px;
+  }
+
+  .hire-me {
+    flex-flow: row wrap;
+    width: 94%;
+    margin-top: 34px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -2156,6 +2249,7 @@ body .title-section h1 {
     right: 52px;
     top: 36px;
     background-color: #f21e4e;
+    z-index: 4;
   }
 
   .cross i {
@@ -2199,6 +2293,7 @@ body .title-section h1 {
     display: block;
     background-color: #f21e4e;
     border-radius: 50%;
+    z-index: 1000;
   }
 
   .menu-toggle span {
@@ -2383,6 +2478,15 @@ body .title-section h1 {
   .slideshow figure {
     width: 90%;
     height: 50%;
+  }
+
+  /* *********************tablet version contact page style properties*************/
+  .contact-me {
+    margin-top: 70px;
+  }
+
+  .contact-icon {
+    margin: 40px;
   }
 }
 

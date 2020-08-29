@@ -1,4 +1,13 @@
+// auto refresh/////////
+window.onresize = function(event)
+{
+  document.location.reload(true);
+}
+
 ///////////////mobile and tablet device navigation menu///////////////////
+
+
+
 if (window.matchMedia('(max-width: 767px)').matches) {
   var cssProperties = { width: '100%' };
   var cssProperties1 = { width: '0%' };
@@ -6,10 +15,6 @@ if (window.matchMedia('(max-width: 767px)').matches) {
   var cssProperties = { width: '25%' };
   var cssProperties1 = { width: '0%' };
 
-}
-window.onresize = function(event)
-{
-  document.location.reload(true);
 }
 $( ".menuToggle" ).click(function() {
   $(".navbar").show().animate(cssProperties);
