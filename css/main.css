@@ -816,16 +816,22 @@ body .title-section h1 {
 }
 
 /*******************desktop version about page resume section education and experience title***********/
-.resume-title {
-  line-height: 1;
-  position: relative;
-  padding-left: 50px;
-  font-size: 22px;
+
+
+/*title with circle and icon for desktop - start*/
+.about-title-container {
+  margin: 50px 0;
 }
 
-.resume-title:before {
-  top: -8px;
-  left: -7px;
+.about-title {
+  font-size: 22px;
+  padding-left: 80px;
+  font-weight: 700;
+  position: relative;
+  top: 8px;
+}
+
+.about-title-circle:before {
   width: 45px;
   height: 45px;
   display: block;
@@ -835,24 +841,14 @@ body .title-section h1 {
   background-color: #f21e4e;
 }
 
-/*************************desktop version about page resume section education and experience title icon ****************/
-.resume-icon {
-  position: relative;
-  bottom: 42px;
-  right: -5px;
-  font-size: 45px;
+.about-title-icon {
+  position: absolute;
+  font-size: 50px;
   color: #111111;
+  margin-left: 10px;
+  margin-top: 10px;
 }
-
-.skill-icon i {
-  color: black;
-  position: relative;
-  bottom: 6px;
-  right: -3px;
-  font-size: 45px;
-  color: #111111;
-
-}
+/*title with circle and icon for desktop - end*/
 
 
 /**************desktop version about page resume section education and experience detail**********/
@@ -911,24 +907,30 @@ body .title-section h1 {
   margin-bottom: 10px;
   padding-left: 30px;
 }
-.resume-body p{
+
+.resume-body p {
   color: #555555;
 }
-.resume-body h5{
+
+.resume-body h5 {
   font-size: 16px;
 }
-.resume-body h6{
+
+.resume-body h6 {
   font-size: 14px;
   font-weight: 600;
 }
-.resume-body .certification-language{
+
+.resume-body .certification-language {
   font-size: 22px;
   margin-top: 24px;
 }
-.language{
+
+.language {
   font-weight: 500;
   color: #555555;
 }
+
 /***************desktop version about page resume section skills part***********/
 .skill-container {
   display: flex;
@@ -941,25 +943,6 @@ body .title-section h1 {
   margin-right: auto;
 }
 
-/*desktop version about page resume section skill part title*********/
-.skill-title {
-  line-height: 1;
-  position: relative;
-  padding-left: 50px;
-  font-size: 22px;
-}
-
-.skill-title:before {
-  top: -8px;
-  left: -7px;
-  width: 45px;
-  height: 45px;
-  display: block;
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  background-color: #f21e4e;
-}
 
 /***********************desktop version about page resume section skill list part**********/
 .skill-row {
@@ -987,18 +970,6 @@ body .title-section h1 {
 .skill-body {
   padding-top: 30px;
   margin-bottom: 10px;
-}
-
-#resume > div > div > div.skill-container > div:nth-child(1) > h4 {
-  right: 5px;
-}
-
-#resume > div > div > div.skill-container > div:nth-child(2) > h4 {
-  left: -5px;
-}
-
-#resume > div > div > div.skill-container > div:nth-child(2) > span {
-  left: 3px;
 }
 
 .skill-container #first-skill-items {
@@ -1878,10 +1849,28 @@ body .title-section h1 {
     width: 262px;
     height: 310px;
   }
- .square-shape h5{
-   font-size: 16px;
- }
+
+  .square-shape h5 {
+    font-size: 16px;
+  }
+
   /***********mobile version about page resume section education and experience part*********/
+
+  /*title with circle and icon for mobile version - start*/
+  .about-title-container-skill {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-title {
+    font-size: 1.1em;
+  }
+
+  .about-title-circle-and-icon {
+    margin-bottom: 7px;
+  }
+  /*title with circle and icon for mobile version - end*/
+
   #resume {
     margin: 33px 0;
   }
@@ -1899,49 +1888,24 @@ body .title-section h1 {
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 30px;
-
-  }
-
-  .resume-title {
-    width: 100%;
-    text-align: center;
-    padding-left: 54px;
-  }
-  #education-others:before{
-    left: 18px;
-  }
-  .resume-row h4 {
-    font-size: 1.5em;
+    margin-right: 0 !important;
   }
 
   .resume-body {
     padding-left: 17px;
     padding-top: 3px;
   }
-  .resume-body h5{
+
+  .resume-body h5 {
     font-size: 18px;
   }
-  .resume-body h6{
-   font-size: 16px;
+
+  .resume-body h6 {
+    font-size: 16px;
   }
-  .resume-body .certification-language{
+
+  .resume-body .certification-language {
     margin-top: 28px;
-  }
-
-  .resume-title:before {
-    left: 59px;
-  }
-
-  .resume-icon {
-    right: 69px;
-    bottom: 51px;
-  }
- #education-others-icon{
-   right: 110px;
-   bottom: 46px;
- }
-  .resume-row:nth-child(1) {
-    margin-right: 0px;
   }
 
   .resume-item {
@@ -1971,43 +1935,13 @@ body .title-section h1 {
     margin-left: auto;
     margin-bottom: 93px;
   }
-  .skill-container #second-skill-row{
+
+  .skill-container #second-skill-row {
     position: static;
-  }
-
-  .skill-row h4 {
-    font-size: 1.5em;
-  }
-
-  .skill-title {
-    width: 100%;
-    text-align: center;
-    padding-left: 0;
   }
 
   .skill-items {
     font-size: 20px;
-  }
-
-  .skill-title:before {
-    left: 59px;
-  }
-
-  .skill-icon i {
-    right: -158px;
-    bottom: 4px;
-  }
-
-  #resume > div > div > div.skill-container > div:nth-child(2) > span {
-    left: 98px;
-  }
-
-  #resume > div > div > div.skill-container > div:nth-child(1) > h4 {
-    right: -9px;
-  }
-
-  #resume > div > div > div.skill-container > div:nth-child(2) > h4 {
-    left: 23px;
   }
 
   .text-icon {
@@ -2017,8 +1951,9 @@ body .title-section h1 {
   .star-rateing i {
     margin-top: 10px;
   }
+
   /************mobile version about page and portfolio page copyright section************/
-  #about-page-copyright{
+  #about-page-copyright {
     display: none;
   }
 
@@ -2038,9 +1973,10 @@ body .title-section h1 {
   }
 
   /*********mobile version portfolio page project styling****************/
-  .grid-wrap{
+  .grid-wrap {
     margin-bottom: 23px;
   }
+
   .grid-wrap ul {
     margin-top: 60px;
   }
@@ -2421,7 +2357,6 @@ body .title-section h1 {
   }
 
   /*******************tablet version about page resume section education and experience part******************/
-
   #resume {
     margin: 33px 0;
   }
@@ -2442,44 +2377,23 @@ body .title-section h1 {
 
   }
 
-  .resume-title {
-    width: 100%;
-    text-align: center;
-    padding-left: 54px;
-  }
-  #education-others:before{
-    left: 135px;
-  }
-  .resume-row h4 {
-   font-size: 22px;
-  }
-
   .resume-body {
     padding-left: 17px;
     padding-top: 3px;
   }
-  .resume-body h5{
+
+  .resume-body h5 {
     font-size: 18px;
   }
-  .resume-body h6{
+
+  .resume-body h6 {
     font-size: 16px;
   }
-  .resume-body .certification-language{
+
+  .resume-body .certification-language {
     margin-top: 28px;
   }
 
-  .resume-title:before {
-    left: 180px;
-  }
-
-  .resume-icon {
-    right: 69px;
-    bottom: 49px;
-  }
-  #education-others-icon{
-    right: 113px;
-    bottom: 46px;
-  }
   .resume-row:nth-child(1) {
     margin-right: 0px;
   }
@@ -2496,26 +2410,20 @@ body .title-section h1 {
   .resume-row ul li {
     margin: 0px;
   }
-  .language{
+
+  .language {
     display: flex;
     justify-content: space-between;
   }
+
   /*************************tablet version about page resume section skill part**************/
   .skill-container {
     margin-bottom: 50px;
     width: 74%;
   }
+
   .skill-items .second-items {
     width: 69%;
-  }
-
-  .skill-title {
-    font-size: 22px;
-  }
-  .skill-icon i{
-    bottom: 2px;
-    right: -77px;
-    font-size: 41px;
   }
 
   /*****************  tablet version portfolio page style properties***************/
@@ -2558,98 +2466,6 @@ body .title-section h1 {
   }
 }
 
-/***************ipad pro about page*****************/
-
-@media only screen
-and (min-width: 1024px)
-and (max-width: 1200px)
- {
-
-  #education-others:before{
-    left: 230px;
-  }
-  .resume-title:before {
-    left: 273px;
-  }
-
-}
-@media only screen
-and (min-width: 320px)
-and (max-width: 374px)
- {
-
-  #education-others:before{
-  left:32px;
-  }
-  .resume-title:before {
-    left: 36px;
-  }
-
-  #education-others-icon {
-    right: 83px;
-    bottom: 71px;
-  }
-  .skill-title:before{
-    left: 51px;
-  }
-  .skill-icon i{
-    right: -148px;
-  }
-  #resume > div > div > div.skill-container > div:nth-child(2) > h4 {
-    left: 34px;
-  }
-}
-/*@media only screen*/
-/*and (min-width: 320px)*/
-/*and (max-height: 568px) {*/
-
-/*  #education-others:before {*/
-/*    left: 20px;*/
-/*  }*/
-
-/*  .resume-title:before {*/
-/*    left: 29px;*/
-/*  }*/
-
-/*  #education-others-icon {*/
-/*    right: 76px;*/
-/*    bottom: 74px;*/
-/*  }*/
-
-/*  .skill-title:before {*/
-/*    left: 35px;*/
-/*  }*/
-
-/*  .skill-icon i {*/
-/*    right: -131px;*/
-/*  }*/
-
-/*  #resume > div > div > div.skill-container > div:nth-child(2) > span {*/
-/*    left: 77px;*/
-/*  }*/
-/*}*/
-/*@media only screen*/
-/*and (min-width: 375px)*/
-/*and (max-height: 812px) {*/
-
-/*  .resume-icon {*/
-/*    right: 64px;*/
-/*    bottom: 52px;*/
-/*  }*/
-/*  .resume-title:before{*/
-/*    left: 53px;*/
-/*  }*/
-/*  #education-others-icon {*/
-/*    right: 111px;*/
-/*    bottom: 50px;*/
-/*  }*/
-/*  #education-others:before{*/
-/*    left: 5px;*/
-/*  }*/
-/*  .skill-icon i {*/
-/*    right: -148px;*/
-/*  }*/
-/*}*/
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
