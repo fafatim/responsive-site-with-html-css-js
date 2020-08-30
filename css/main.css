@@ -826,7 +826,6 @@ body .title-section h1 {
 .about-title {
   font-size: 22px;
   padding-left: 80px;
-  padding-top: 11px;
   font-weight: 700;
   position: relative;
   top: 8px;
@@ -849,7 +848,6 @@ body .title-section h1 {
   margin-left: 10px;
   margin-top: 10px;
 }
-
 /*title with circle and icon for desktop - end*/
 
 
@@ -1855,6 +1853,7 @@ body .title-section h1 {
   }
 
   /***********mobile version about page resume section education and experience part*********/
+
   /*title with circle and icon for mobile version - start*/
   .about-title-container-skill {
     display: flex;
@@ -1868,8 +1867,8 @@ body .title-section h1 {
   .about-title-circle-and-icon {
     margin-bottom: 7px;
   }
-
   /*title with circle and icon for mobile version - end*/
+
   #resume {
     margin: 33px 0;
   }
