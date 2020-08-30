@@ -1205,12 +1205,14 @@ body .title-section h1 {
 }
 
 .portfolio-project-detail {
-  width: 50%;
+  width: 100%;
   margin-bottom: 10px;
   font-weight: 500;
   color: black;
 }
-
+.project-label{
+  font-weight: 600;
+}
 .slideshow ul > li.show {
   visibility: visible;
 }
