@@ -4,9 +4,16 @@ window.onresize = function(event)
   document.location.reload(true);
 }
 
+// html page switcher for service and resume mobile page
+var href = window.location.href.split("/")
+var html_location = href[href.length-1]
+
+if (window.innerWidth >= 780 && html_location !== "index.html") {
+  window.location = "index.html";
+}
+
+
 ///////////////mobile and tablet device navigation menu///////////////////
-
-
 
 if (window.matchMedia('(max-width: 767px)').matches) {
   var cssProperties = { width: '100%' };
@@ -55,38 +62,38 @@ $(window).on('scroll', function () {
   });
 });
 
- /////////////////hover action in project gallery/////////////////////
+/////////////////hover action in project gallery/////////////////////
 
- $(window).load(function(){
+// $(window).load(function(){
 
-  $('#container> li.item').hover(function(event){
-    // mouseenter
-    var $item = $(this),
-      direction = $item.entry({e:event});
+$('#container> li.item').hover(function(event){
+  // mouseenter
+  var $item = $(this),
+    direction = $item.entry({e:event});
 
-    // fix jquery slide issue when moving cursor too fast
-    if($item.hasClass('opened')) $item.find('.hover-wrap').stop(true,true).show();
+  // fix jquery slide issue when moving cursor too fast
+  if($item.hasClass('opened')) $item.find('.hover-wrap').stop(true,true).show();
 
-    $.when($item.find('.hover-wrap').stop(true, true).show("slide", { direction: direction}, 255, 'easeOutQuad')).done(function(){
-      $item.addClass('opened');
-    });
-
-    // fix javascript missing events when moving cursor too fast.
-    // hover may stay active if javascript miss mousemove event, simply hide them
-    var inverted_direction = $item.entry({e:event, invert: true});
-    $item.siblings('.opened').removeClass('opened')
-      .find('.hover-wrap').hide("slide", { direction: direction}, 255, 'easeOutQuad');
-
-  }, function(event){
-    // mouseleave
-    var $item = $(this),
-      direction = $item.entry({e:event});
-    $.when($item.find('.hover-wrap').stop(true, true).hide("slide", { direction: direction}, 255, 'easeOutQuad')).done(function(){
-      $item.removeClass('opened');
-    });
-
+  $.when($item.find('.hover-wrap').stop(true, true).show("slide", { direction: direction}, 255, 'easeOutQuad')).done(function(){
+    $item.addClass('opened');
   });
+
+  // fix javascript missing events when moving cursor too fast.
+  // hover may stay active if javascript miss mousemove event, simply hide them
+  var inverted_direction = $item.entry({e:event, invert: true});
+  $item.siblings('.opened').removeClass('opened')
+    .find('.hover-wrap').hide("slide", { direction: direction}, 255, 'easeOutQuad');
+
+}, function(event){
+  // mouseleave
+  var $item = $(this),
+    direction = $item.entry({e:event});
+  $.when($item.find('.hover-wrap').stop(true, true).hide("slide", { direction: direction}, 255, 'easeOutQuad')).done(function(){
+    $item.removeClass('opened');
+  });
+
 });
+// });
 
 
 
