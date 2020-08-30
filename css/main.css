@@ -2411,43 +2411,101 @@ body .title-section h1 {
   }
 
   /*******************tablet version about page resume section education and experience part******************/
+
+  #resume {
+    margin: 33px 0;
+  }
+
   .resume-container {
-    width: 83%;
+    flex-flow: row wrap;
+    width: 92%;
+    margin-top: 52px;
+  }
+
+  .resume-row {
+    width: 80%;
+    position: static;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+
   }
 
   .resume-title {
-    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    padding-left: 54px;
   }
-
-  .resume-icon {
-    bottom: 44px;
-    right: -3px;
+  #education-others:before{
+    left: 135px;
+  }
+  .resume-row h4 {
+   font-size: 22px;
   }
 
   .resume-body {
-    padding-top: 1px;
+    padding-left: 17px;
+    padding-top: 3px;
+  }
+  .resume-body h5{
+    font-size: 18px;
+  }
+  .resume-body h6{
+    font-size: 16px;
+  }
+  .resume-body .certification-language{
+    margin-top: 28px;
   }
 
-  .resume-body h5 {
-    font-size: 1.2em;
+  .resume-title:before {
+    left: 180px;
   }
 
-  .resume-body h6 {
-    font-size: 1em;
+  .resume-icon {
+    right: 69px;
+    bottom: 49px;
+  }
+  #education-others-icon{
+    right: 113px;
+    bottom: 46px;
+  }
+  .resume-row:nth-child(1) {
+    margin-right: 0px;
   }
 
-  .resume-body p {
-    font-size: 1.2em;
-    width: 100%;
+  .resume-item {
+    top: -14px;
+    font-size: 20px;
   }
 
+  .el-icon:before {
+    top: 40px;
+  }
+
+  .resume-row ul li {
+    margin: 0px;
+  }
+  .language{
+    display: flex;
+    justify-content: space-between;
+  }
   /*************************tablet version about page resume section skill part**************/
+  .skill-container {
+    margin-bottom: 50px;
+    width: 74%;
+  }
   .skill-items .second-items {
     width: 69%;
   }
 
   .skill-title {
     font-size: 22px;
+  }
+  .skill-icon i{
+    bottom: 2px;
+    right: -77px;
+    font-size: 41px;
   }
 
   /*****************  tablet version portfolio page style properties***************/
@@ -2490,6 +2548,21 @@ body .title-section h1 {
   }
 }
 
+/***************ipad pro about page*****************/
+
+@media only screen
+and (min-width: 1024px)
+and (max-height: 1366px)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  #education-others:before{
+    left: 230px;
+  }
+  .resume-title:before {
+    left: 273px;
+  }
+
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
