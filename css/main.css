@@ -86,6 +86,18 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/********animate css in portfolio section**************/
+.item {
+  --animate-delay: 0.15s;
+  --animate-duration: .7s;
+}
+
+/********animation css in contact section**********/
+.get-in-touch, .hire-me{
+  --animate-delay: 0.15s;
+  --animate-duration: .7s;
+}
+
 /**************************desktop version home page style properties**********************************/
 
 /*body */
@@ -1433,8 +1445,37 @@ color: #555555;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  html {
+    /* Rotate the content container */
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    /* Set content width to viewport height */
+    width: 100vh;
+    /* Set content height to viewport width */
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
 
 @media only screen and (max-width: 767px) {
+  /********animation in portfolio page mobile version**********/
+  .item {
+    --animate-delay: 0s;
+  }
+  .item {
+    --animate-duration: 0s;
+  }
+
+  #container{
+    --animate-delay: 0.2s;
+  }
+  #container {
+    --animate-duration: 2s;
+  }
   /****************mobile version home page properties******************/
   .mobile-view {
     display: block;

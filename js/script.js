@@ -1,6 +1,20 @@
 // auto refresh/////////
-window.onresize = function (event) {
-  document.location.reload(true);
+var before = $(this).width();
+
+$(window).resize(function() {
+  var after = $(this).width();
+  if (after != before) {
+    location.reload()
+  }
+})
+
+
+////////////////////change the desktop version animation in portfolio page and added animation in portfolio page mobile version\\\\\\\\\
+
+if (window.innerWidth < 768) {
+  $("#container li*").removeClass();
+  $("#container li*").addClass("item");
+  $("#container").addClass("animate__animated animate__fadeInDown animate__delay-1s");
 }
 
 // html page switcher for service and resume mobile page
