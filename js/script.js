@@ -7,7 +7,8 @@ $(window).resize(function() {
     location.reload()
   }
 })
-
+//fix revealator issues/////////////////
+$(".revealator-delay1").addClass('no-transform');
 
 ////////////////////change the desktop version animation in portfolio page and added animation in portfolio page mobile version\\\\\\\\\
 

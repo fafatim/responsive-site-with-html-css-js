@@ -132,42 +132,42 @@
 			}
 		} );
     ////////////////left and right swipe action for all devices///////////////////
-
-    document.addEventListener('touchstart', handleTouchStart, false);
-    document.addEventListener('touchmove', handleTouchMove, false);
-    var xDown = null;
-    var yDown = null;
-
-    function handleTouchStart(evt) {
-      xDown = evt.touches[0].clientX;
-      yDown = evt.touches[0].clientY;
-    };
-
-    function handleTouchMove(evt) {
-      if ( ! xDown || ! yDown ) {
-        return;
-      }
-      var xUp = evt.touches[0].clientX;
-      var yUp = evt.touches[0].clientY;
-      var xDiff = xDown - xUp;
-      var yDiff = yDown - yUp;
-
-      if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
-          /* left swipe */
-          self._navigate( 'next' );
-        } else {
-          /* right swipe */
-          self._navigate( 'prev' );
-        }
-      } else {
-        // up or down swipe for close
-        self._closeSlideshow();
-      }
-      /* reset values */
-      xDown = null;
-      yDown = null;
-    };
+    //
+    // document.addEventListener('touchstart', handleTouchStart, false);
+    // document.addEventListener('touchmove', handleTouchMove, false);
+    // var xDown = null;
+    // var yDown = null;
+    //
+    // function handleTouchStart(evt) {
+    //   xDown = evt.touches[0].clientX;
+    //   yDown = evt.touches[0].clientY;
+    // };
+    //
+    // function handleTouchMove(evt) {
+    //   if ( ! xDown || ! yDown ) {
+    //     return;
+    //   }
+    //   var xUp = evt.touches[0].clientX;
+    //   var yUp = evt.touches[0].clientY;
+    //   var xDiff = xDown - xUp;
+    //   var yDiff = yDown - yUp;
+    //
+    //   if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+    //     if ( xDiff > 0 ) {
+    //       /* left swipe */
+    //       self._navigate( 'next' );
+    //     } else {
+    //       /* right swipe */
+    //       self._navigate( 'prev' );
+    //     }
+    //   } else {
+    //     // up or down swipe for close
+    //     self._closeSlideshow();
+    //   }
+    //   /* reset values */
+    //   xDown = null;
+    //   yDown = null;
+    // };
     //////////// swipe action ends///////////////////////////
 
 		// trick to prevent scrolling when slideshow is visible
