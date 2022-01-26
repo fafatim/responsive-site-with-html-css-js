@@ -78,7 +78,7 @@ $(window).on('scroll', function () {
 
 /////////////////hover action in project gallery/////////////////////
 
-// $(window).load(function(){
+$(window).load(function(){
 
 $('#container> li.item').hover(function (event) {
   // mouseenter
@@ -107,7 +107,7 @@ $('#container> li.item').hover(function (event) {
   });
 
 });
-// });
+});
 
 
 

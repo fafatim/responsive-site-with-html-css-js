@@ -137,6 +137,7 @@ body .preloader {
 
 .personal-detail {
   display: flex;
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -178,8 +179,8 @@ body .preloader {
 
 .image img {
   position: absolute;
-  top: 6vh;
-  height: 70vh;
+  top: 15vh;
+  height: 50vh;
   left: 2vh;
   border-radius: 5%;
 }
@@ -212,11 +213,12 @@ body .preloader {
 }
 
 .intro h2 {
-  font-family: 'Dancing Script', cursive;
+  /*font-family: 'Dancing Script', cursive;*/
   font-weight: 700;
-  font-size: 3em;
-  text-shadow: -2px 3px 6px #ff0000;
+  font-size: 2.5em;
+  /*text-shadow: -2px 3px 6px #ff0000;*/
   margin: 0;
+  color: #f21e4e;
 }
 
 .intro h3 {
@@ -234,6 +236,7 @@ body .preloader {
 .description {
   width: 70%;
   font-size: 1.2em;
+  text-align: justify;
 }
 
 /*********************** desktop version home page Buttons********************************/
@@ -584,16 +587,21 @@ body .title-section h1 {
 }
 
 /***************************desktop version about page personal info section image******************/
-.about-image img {
-  height: 47vh;
-  position: relative;
-  top: 6vh;
-  left: 10vw;
+.pic-intro{
+  display: flex;
+  justify-content: space-between;
+ position: relative;
+  left: 459px;
+  top: 60px;
+
+}
+.pic-intro img {
+  height: 34vh;
   transition: transform .2s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.about-image img:hover {
+.pic-intro img:hover {
   -ms-transform: scale(1.02); /* IE 9 */
   -webkit-transform: scale(1.02); /* Safari 3-8 */
   transform: scale(1.02);
@@ -603,8 +611,7 @@ body .title-section h1 {
 /**************desktop version about page personal info introduction ******************/
 .about-intro {
   display: flex;
-  flex-flow: row wrap;
-  margin: 30px 0px 10px 0;
+  margin: 0px 0px 10px 0;
 }
 
 /*********************desktop version about page personal info section ****************************/
@@ -612,13 +619,18 @@ body .title-section h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -54px;
 
+}
+.personal-info-detail ul{
+  margin: 0;
 }
 
 .personal-info-detail ul li {
   list-style-type: none;
   font-size: 1.5em;
-  margin: 5.8vh 0 5.8vh 0;
+  margin: 0vh 0 1.2vh 0;
   font-weight: 500 ! important;
   text-transform: uppercase;
 }
@@ -626,8 +638,12 @@ body .title-section h1 {
 .personal-info-detail h6 {
   font-weight: 200;
   color: #555;
+  margin: 20px;
 }
-
+#email{
+  text-decoration: none;
+  color: black;
+}
 .personal-info-detail h6 span {
   margin-right: 20px;
   color: #f21e4e;
@@ -635,8 +651,13 @@ body .title-section h1 {
 
 /******************desktop version about page download resume button****************/
 .resume-download {
+  display: flex;
+  justify-content: space-around;
   margin-left: 39px;
+  position: relative;
   color: #f21e4e;
+  top: 264px;
+  left: 40px;
 
 }
 
@@ -744,7 +765,7 @@ body .title-section h1 {
 /*******************desktop version service section square shape *********************/
 .square-container {
   display: flex;
-  margin-top: 55px;
+  margin-top: 200px;
   justify-content: center;
   flex-flow: row;
   width: 100%;
@@ -806,7 +827,7 @@ body .title-section h1 {
 
 /********************desktop version about page resume section education,experience and skills properties*********************/
 #resume {
-  margin: 70px 0;
+  margin: 124px 0;
 }
 
 .common-container {
@@ -996,7 +1017,7 @@ body .title-section h1 {
 .text-icon {
   display: flex;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 47px;
 }
 
 .text-icon p {
@@ -1328,28 +1349,44 @@ color: #555555;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  left: 224px;
   width: 100%;
   margin-bottom: 35px;
 }
 
 .contact-icon i {
-  width: 60px;
-  height: 38px;
+  width: 40px;
+  height: 20px;
   text-align: center;
   background: #f21e4e;
   border-radius: 100%;
   color: #fff;
   padding-top: 20px;
-  font-size: 24px;
+  font-size: 15px;
   margin-bottom: 10px;
   -webkit-box-shadow: -1px -1px 12px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px -1px 12px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px -1px 12px -1px rgba(0, 0, 0, 0.75);
+  position: relative;
 
 }
+ .fa.fa-linkedin:before {
+  content: "\f0e1";
+  position: relative;
+  top: -8px;
+}
+.fa-github:before {
+  content: "\f09b";
+  position: relative;
+  top: -8px;
+}
+
 
 .contact-icon {
-  margin: 30px;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 2px;
   text-align: center;
 }
 
@@ -1622,7 +1659,7 @@ color: #555555;
     top: 0px;
     height: 30vh;
     left: 0px;
-    border-radius: 100%;
+    border-radius: 20%;
     border: 10px solid #f21e4e;
   }
 
@@ -1778,20 +1815,21 @@ color: #555555;
     background-color: #cccccc;
     display: none;
     transition: 0.3s;
+    left: 24px;
   }
 
-  #service-header {
-    position: relative;
-    width: 82px;
-    left: 29px;
-    height: 2px;
-    background-color: #cccccc;
-  }
+  /*#service-header {*/
+  /*  position: relative;*/
+  /*  width: 82px;*/
+  /*  left: 29px;*/
+  /*  height: 2px;*/
+  /*  background-color: #cccccc;*/
+  /*}*/
 
   #resume-header {
     position: relative;
-    width: 76px;
-    left: 33px;
+    width: 192px;
+    left: 1px;
     height: 2px;
     background-color: #cccccc;
   }
@@ -1801,20 +1839,25 @@ color: #555555;
   }
 
   /****************mobile version about page personal info**************/
+  #about-page-pic{
+    height: 35vh;
+    transition: transform .2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
   .personal-detail {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    margin-top: 31px;
+
     margin-bottom: 40px;
 
   }
 
   .personal-detail h2 {
+    margin-top: 0;
     font-size: 2em;
     color: #f21e4e;
-    padding-top: 10px;
-    padding-bottom: 20px;
+
     text-transform: uppercase;
     text-shadow: 1px 1px 2px #2b2a2abd;
   }
@@ -1830,7 +1873,7 @@ color: #555555;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 120px;
   }
 
 
@@ -1856,6 +1899,8 @@ color: #555555;
     display: flex;
     justify-content: center;
     width: 76%;
+    top : -13px;
+    left: 10px;
   }
 
   /********mobile version about page common div properties*******/
@@ -1890,7 +1935,7 @@ color: #555555;
   .square-shape {
     margin-bottom: 30px;
     width: 262px;
-    height: 310px;
+    height: 317px;
   }
 
   .square-shape h5 {
@@ -1906,7 +1951,7 @@ color: #555555;
   }
 
   .about-title {
-    font-size: 1.1em;
+    font-size: 1.8em;
   }
 
   .about-title-circle-and-icon {
@@ -2145,7 +2190,7 @@ color: #555555;
     top: 0px;
     left: 0px;
     height: 28vh;
-    border-radius: 100%;
+    border-radius: 12%;
     border: 10px solid #f21e4e;
   }
 
@@ -2338,9 +2383,7 @@ color: #555555;
 
   /*  ***********************************tablet version about page personal info part****************/
   .personal-detail {
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+   right: 423px;
     font-size: 19px;
   }
 
@@ -2366,9 +2409,13 @@ color: #555555;
   /**********************tablet version about page button section*******************/
   .resume-download {
     display: flex;
+    top: 360px;
     justify-content: center;
-    margin-left: 0;
+    margin-left: 49px;
     font-size: 16px;
+  }
+  .contact-icon{
+    margin : 10px;
   }
 
   .custom-btn {
@@ -2385,7 +2432,7 @@ color: #555555;
   .square-shape {
     margin-bottom: 32px;
     width: 281px;
-    height: 321px;
+    height: 340px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -2503,9 +2550,9 @@ color: #555555;
     margin-top: 70px;
   }
 
-  .contact-icon {
-    margin: 40px;
-  }
+  /*.contact-icon {*/
+  /*  margin: 40px;*/
+  /*}*/
 }
 
 /* ==========================================================================
